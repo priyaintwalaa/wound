@@ -19,12 +19,12 @@
 // });
 
 const {onRequest} = require('firebase-functions/v2/https')
-const {registerController,loginController,addNewAdmin} = require('./controller/user')
+const {registerController,loginController,addNewAdmin, updatePassword} = require('./controller/user')
 const {adminAuthorization,requireSignIn} = require('./middleware/authMiddleware')
 
 const admin = require('firebase-admin')
 const express = require('express')
-const serviceAccount = require('../wound-firebase-firebase-adminsdk-dgmii-ee346eaa6c.json')
+const serviceAccount = require('./wound-firebase-firebase-adminsdk-dgmii-ee346eaa6c.json')
 
 admin.initializeApp({
     credential:admin.credential.cert(serviceAccount),
@@ -36,7 +36,6 @@ const app = express()
 app.post('/register',registerController)
 app.post('/login',loginController)
 app.post('/addAdmin',requireSignIn,adminAuthorization,addNewAdmin)
+app.post('/updatePass',requireSignIn,updatePassword)
 
 exports.wound = onRequest(app)
-
-

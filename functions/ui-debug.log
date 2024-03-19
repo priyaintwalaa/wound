@@ -1,17 +1,2 @@
 Web / API server started at 127.0.0.1:4000
 Web / API server started at ::1:4000
-node[1206701]: ../src/node.cc:708:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.
- 1: 0xc9e850 node::Abort() [node]
- 2: 0xc9e8ce  [node]
- 3: 0xc53264  [node]
- 4: 0xc5337c node::SignalExit(int, siginfo_t*, void*) [node]
- 5: 0x7f72a3188420  [/lib/x86_64-linux-gnu/libpthread.so.0]
- 6: 0x7f72a30a14b6 epoll_pwait [/lib/x86_64-linux-gnu/libc.so.6]
- 7: 0x1896f26  [node]
- 8: 0x1883517 uv_run [node]
- 9: 0xbb5b83 node::SpinEventLoopInternal(node::Environment*) [node]
-10: 0xced015  [node]
-11: 0xced9dd node::NodeMainInstance::Run() [node]
-12: 0xc588a7 node::Start(int, char**) [node]
-13: 0x7f72a2fa6083 __libc_start_main [/lib/x86_64-linux-gnu/libc.so.6]
-14: 0xbb2afe _start [node]

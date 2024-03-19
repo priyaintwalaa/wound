@@ -1,128 +1,121 @@
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-// const { SECRET } = require("../helper/config");
-const SECRET = "ABC"
+const SECRET = "ABC";
 const { sendTemporaryCredEmail } = require("./email");
 const { getAuth, updatePassword } = require("firebase/auth");
 const admin = require("firebase-admin");
-const { getFirestore } = require('firebase-admin/firestore');
+const userCollection = "users";
+// const firebase = require("firebase/app");
 
-const userCollection = 'users'
+function generateTemporaryPassword(length = 7) {
+  const charset =
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  let temporaryPassword = "";
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * charset.length);
+    temporaryPassword += charset[randomIndex];
+  }
+  return temporaryPassword;
+}
 
 exports.registerController = async (req, res) => {
-  const firestore = admin.firestore()
   try {
-    const data = req.body
-    // const user = {
-    //     email: req.body.email,
-    //     password:req.body.password,
-    //     role:req.body.role,
-    // }
+    const firestore = admin.firestore();
+    const { email, password, role } = req.body;
 
-    const newDoc = await firestore.collection(userCollection).add(data);
-    res.status(201).send(`Created a new user: ${newDoc.id}`);
-} catch (error) {
-    res.status(400).send(`User should cointain firstName, lastName, email, areaNumber, department, id and contactNumber!!!`)
-}
+    const userDoc = await firestore.collection(userCollection).doc(email).get();
+    if (userDoc.exists) {
+      return res.status(400).json({ error: "Email already exists" });
+    }
+
+    const hashPassword = await bcrypt.hash(password, 10);
+    console.log(hashPassword, "pass");
+
+    const newDoc = await firestore.collection(userCollection).doc(email).set({
+      email,
+      password: hashPassword,
+      role,
+    });
+
+    console.log(newDoc.email);
+    console.log(newDoc.password);
+    res.status(201).send(`Created a new user: ${newDoc.role}`);
+  } catch (error) {
+    res.status(400).json({ error, message: "error" });
+  }
 };
 
-  // const { email, password, role } = req.body;
+exports.loginController = async (req, res) => {
+  try {
+    const firestore = admin.firestore();
+    const { email, password } = req.body;
 
-  // const existingUser = await admin.auth().getUserByEmail(email);
-  // if (existingUser) {
-  //   return res.status(400).json({ error: "Email already exists" });
-  // }
-  // const hashPassword = await bcrypt.hash(password, 10);
-  // console.log(hashPassword)
+    // Check if the user exists in the database
+    const userDoc = await firestore.collection(userCollection).doc(email).get();
+    if (!userDoc.exists) {
+      return res.status(400).json({ error: "Invalid email or password" });
+    }
 
-  // const data = await admin.auth().createUser({
-  //   email,
-  //   password,
-  //   role,
-  // });
+    const userData = userDoc.data();
+    const hashedPassword = userData.password;
 
-  // res.status(200).json({ data });
+    // Compare the provided password with the stored hashed password
+    const passwordMatch = await bcrypt.compare(password, hashedPassword);
+    if (!passwordMatch) {
+      return res.status(400).json({ error: "Invalid email or password" });
+    }
+    // Passwords match, authentication successful
+    const token = jwt.sign({ email, role: userData.role }, SECRET, {
+      expiresIn: "10h",
+    });
 
-// exports.loginController = async (req, res) => {
-//   const { email, password } = req.body
+    res.status(200).json({ token, message: "Login successful" });
+  } catch (error) {
+    console.error("Error logging in user:", error);
+    res.status(400).json({ error: "Failed to login user" });
+  }
+};
 
-//   const user = await admin.auth().getUserByEmail(email);
-//   console.log(user,"user")
+exports.addNewAdmin = async (req, res) => {
+  const firestore = admin.firestore();
+  const user = req.user;
+  const { email, role } = req.body;
 
-//   if (!user) {
-//     return res.status(400).json({ message: "User not found" });
-//   }
+  const temporaryPass = generateTemporaryPassword();
 
-// const passwordHash = user.passwordHash;
+  const hashPassword = await bcrypt.hash(temporaryPass, 10);
 
-// const parts = passwordHash.split(":");
+  const newDoc = await firestore.collection(userCollection).doc(email).set({
+    email,
+    password: hashPassword,
+    role,
+  });
+  await sendTemporaryCredEmail(email, temporaryPass, user);
 
-// let passwordd = "";
-// for (const part of parts) {
-//     if (part.startsWith("password=")) {
-//         // Extract the password after "password="
-//         passwordd = part.split("=")[1];
-//         break;
-//     }
-// }
-//   const passwordMatch = await bcrypt.compare(password,passwordd)
-//   if (!passwordMatch) {
-//     return res.status(400).json({ message: "Password not match" });
-//   }
+  res.status(200).json({ data: { email: newDoc.email, role: newDoc.role } });
+};
 
-//   console.log(user.role,"role")
-//   console.log(user,"user")
-//   const token = jwt.sign({ email, role: user.role }, SECRET, {
-//     expiresIn: "10h",
-//   });
-//   res.status(200).json({ token, message: "Login successful" });
-// };
+exports.updatePassword = async (req, res) => {
+  const firestore = admin.firestore();
 
-// exports.addNewAdmin = async (req, res) => {
-//   const user = req.user;
+  const data = req.user;
+  const { currentPassword, newPassword } = req.body;
+  const email = data.email;
+  const userDoc = await firestore.collection(userCollection).doc(email).get();
 
-//   const { email, temporaryPass } = req.body;
+  const userData = userDoc.data();
+  const hashedPassword = userData.password;
 
-//   const existingUser = await admin.auth().getUserByEmail(email);
-//   if (existingUser) {
-//     return res.status(400).json({ error: "Email already exists" });
-//   }
+  const passwordMatch = await bcrypt.compare(currentPassword, hashedPassword);
+  console.log(passwordMatch)
+  if (!passwordMatch) {
+    return res.status(400).json({ error: "Invalid email or password" });
+  }
 
-//   const hashPassword = await bcrypt.hash(temporaryPass, 10);
-
-//   const data = await admin.auth().createUser({
-//     email,
-//     password: hashPassword,
-//     role,
-//   });
-
-//   await sendTemporaryCredEmail(email, temporaryPass, user);
-
-//   res.status(200).json({ data });
-// };
-
-// exports.updatePassword = async (req, res) => {
-//   // try {
-//   const auth = getAuth();
-//   const { password } = req.body;
-
-//   const user = auth.currentUser;
-//   const newPassword = await bcrypt.hash(password, 10);
-
-//   updatePassword(user, newPassword)
-//     .then(() => {
-//       res.status(200).json({ user, message: "Successfully password changed" });
-//     })
-//     .catch((error) => {
-//       res.status(400).json({ message: "Password not updated", error });
-//     });
-//   // const data = req.user
-
-//   // const user = admin.auth().currentUser;
-
-//   // const updatePass = await user.updatePassword(hashPassword);
-
-//   // } catch (error) {
-
-//   // }
-// };
+  const newHashedPassword = await bcrypt.hash(newPassword, 10);
+  await firestore.collection(userCollection).doc(email).update({ password: newHashedPassword });
+ 
+  return res
+    .status(200)
+    .json({ userDoc: userData });
+};

@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer') // Import nodemailer library
+require('dotenv').config()
 
 exports.sendTemporaryCredEmail = async (email,password,user) => {
     const transporter = nodemailer.createTransport({
