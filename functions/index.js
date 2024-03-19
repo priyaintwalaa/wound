@@ -19,7 +19,7 @@
 // });
 
 const {onRequest} = require('firebase-functions/v2/https')
-const {registerController,loginController,addNewAdmin, updatePassword} = require('./controller/user')
+const {registerController,loginController,addNewAdmin, updatePassword, deactivateUser, deleteUser} = require('./controller/user')
 const {adminAuthorization,requireSignIn} = require('./middleware/authMiddleware')
 
 const admin = require('firebase-admin')
@@ -36,6 +36,8 @@ const app = express()
 app.post('/register',registerController)
 app.post('/login',loginController)
 app.post('/addAdmin',requireSignIn,adminAuthorization,addNewAdmin)
-app.post('/updatePass',requireSignIn,updatePassword)
+app.post('/updatePass',requireSignIn,updatePassword)   //do this to put or patch
+app.post('/deactivate',requireSignIn,deactivateUser)
+app.delete('/delete',requireSignIn,deleteUser)
 
 exports.wound = onRequest(app)

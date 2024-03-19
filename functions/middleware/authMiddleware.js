@@ -1,13 +1,12 @@
 const jwt = require('jsonwebtoken')
-// const {SECRET} = require('../helper/config')
-const SECRET = 'ABC'
+require('dotenv').config()
 
 exports.requireSignIn = async (req, res,next)=>{
     try {
         if(req.headers.authorization){
             const decode = jwt.verify(
                 req.headers.authorization,
-                SECRET
+                process.env.SECRET
             )
             req.user = decode
             next()
@@ -25,7 +24,7 @@ exports.adminAuthorization =  async (req, res,next)=>{
         if(req.headers.authorization){
             const decode = jwt.verify(
                 req.headers.authorization,
-                SECRET
+                process.env.SECRET
             )
             console.log(decode,"decode")
             if(decode.role == 'admin'){
