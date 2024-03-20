@@ -1,6 +1,6 @@
-const dotenv = require('dotenv')
-dotenv.config()
+// const dotenv = require('dotenv')
+// dotenv.config()
 
-module.exports = {
-    SECRET: process.env.SECRET
-}
+// module.exports = {
+//     SECRET: process.env.SECRET
+// }
