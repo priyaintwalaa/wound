@@ -3,6 +3,7 @@ const admin = require('firebase-admin')
 const express = require('express')
 const serviceAccount = require('./wound-firebase-firebase-adminsdk-dgmii-ee346eaa6c.json')
 const userRoutes = require('./routes/user')
+const orderRoutes = require('./routes/order')
 
 admin.initializeApp({
     credential:admin.credential.cert(serviceAccount),
@@ -12,5 +13,6 @@ admin.initializeApp({
 const app = express()
 
 app.use('/',userRoutes)
+app.use('/order',orderRoutes)
 
 exports.wound = onRequest(app)

@@ -1,5 +1,3 @@
-const bcrypt = require("bcrypt");
-require("dotenv").config();
 const { generateEmailService } = require("../service/generate-email");
 const admin = require("firebase-admin");
 const { generatePasswordService } = require("../service/generate-password");
