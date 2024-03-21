@@ -3,9 +3,8 @@ require("dotenv").config();
 const { generateEmailService } = require("../service/generate-email");
 const admin = require("firebase-admin");
 const { generatePasswordService } = require("../service/generate-password");
-const { checkEmailExists, passwordHashing, addUser, passwordCorrect, emailCorrect, isDisabledCheck, jwtTokenGenerate, updatePassword, adminCheck } = require("../service/user");
+const { checkEmailExists, passwordHashing, addUser, passwordCorrect, emailCorrect, isDisabledCheck, jwtTokenGenerate, updatePassword, adminCheck, deactivateUserService, deleteUserService } = require("../service/user");
 const userCollection = "users";
-
 
 exports.registerController = async (req, res) => {
   try {
@@ -61,7 +60,7 @@ exports.loginController = async (req, res) => {
     // if (!passwordMatch) {
     //   return res.status(400).json({ error: "Invalid email or password" });
     // }
-    await passwordCorrect(password,hashedPassword)
+    await passwordCorrect(password,hashedPassword,res)
 
     // const token = jwt.sign({ email, role: userData.role }, process.env.SECRET, {
     //   expiresIn: "10h",
@@ -92,11 +91,9 @@ exports.addAdminController = async (req, res) => {
     //   password: hashPassword,
     //   role,
     // });
-    console.log("before email")
    const data = await generateEmailService(email, temporaryPass, user)
-    console.log("after email")
    
-    res.status(200).json({ data: { email: newDoc.email, role: newDoc.role } })
+    res.status(200).json({ message:"Succesfully added and mail sent to user" })
   } catch (error) {
     res.status(400).json({ error });
   }
@@ -120,7 +117,7 @@ exports.updatePasswordController = async (req, res) => {
     // if (!passwordMatch) {
     //   return res.status(400).json({ error: "Invalid email or password" });
     // }
-    await passwordCorrect(currentPassword,hashedPassword)
+    await passwordCorrect(currentPassword,hashedPassword,res)
 
     // const newHashedPassword = await bcrypt.hash(newPassword, 10);
     const newHashedPassword = await passwordHashing(newPassword)
@@ -165,7 +162,6 @@ exports.deactivateUserController = async (req, res) => {
     const deactivateuserDoc = await emailCorrect(firestore,userCollection,deactivateUser,res)
     const result = deactivateuserDoc.data();
    
-
     // if (result.isDisabled == true) {
     //   return res
     //     .status(400)
@@ -177,9 +173,9 @@ exports.deactivateUserController = async (req, res) => {
     //   .collection(userCollection)
     //   .doc(deactivateUser)
     //   .update({ isDisabled: true });
-    const updated = await deactivateUser(firestore,userCollection,deactivateUser,true)
+    const updated = await deactivateUserService(firestore,userCollection,deactivateUser,true)
 
-    return res.status(200).json({ userDoc: result , update:"Updated succesfully" });
+    return res.status(200).json({ userDoc: updated.data() , update:"Updated succesfully" });
   } catch (error) {
     res.status(400).json({ error });
   }
@@ -205,7 +201,7 @@ exports.deleteUserController = async (req, res) => {
     await adminCheck(userData.role,res)
     
     // await firestore.collection(userCollection).doc(deleteUser).delete();
-    await deleteUser(firestore,userCollection,deleteUser)
+    await deleteUserService(firestore,userCollection,deleteUser)
 
     return res.status(200).json({ message: "Succesfully deleted" });
   } catch (error) {

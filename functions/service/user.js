@@ -25,7 +25,7 @@ exports.passwordHashing = async (password) =>{
     const hashedPassword = await bcrypt.hash(password, 10);
     return hashedPassword
 }
-exports.passwordCorrect = async (inputPassword,actualPassword) =>{
+exports.passwordCorrect = async (inputPassword,actualPassword,res) =>{
     const passwordMatch = await bcrypt.compare(inputPassword, actualPassword);
     if (!passwordMatch) {
       return res.status(400).json({ error: "Invalid email or password" });
@@ -66,7 +66,7 @@ exports.updatePassword = async (firestore,collectionName,email,password)=>{
     return update
 }
 
-exports.deactivateUser = async (firestore,collectionName,email,disabled) => {
+exports.deactivateUserService = async (firestore,collectionName,email,disabled) => {
    const data = await firestore
     .collection(collectionName)
     .doc(email)
@@ -83,7 +83,7 @@ exports.adminCheck = (role,res) => {
       }
 }
 
-exports.deleteUser = async(firestore,collectionName,email)=>{
+exports.deleteUserService = async(firestore,collectionName,email)=>{
 
     const data = await firestore.collection(collectionName).doc(email).delete();
     return data
