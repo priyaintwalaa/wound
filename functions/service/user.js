@@ -4,87 +4,88 @@ const { firestore } = require("firebase-admin");
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
 
-exports.checkEmailExists = async (firestore,collectionName,email) =>{
-    const userDoc = await firestore.collection(collectionName).doc(email).get();
-    if (userDoc.exists) {
-      return res.status(400).json({ error: "Email already exists" });
-    }
-    return userDoc
-}
+exports.checkEmailExists = async (firestore, collectionName, email) => {
+  const userDoc = await firestore.collection(collectionName).doc(email).get();
+  if (userDoc.exists) {
+    return res.status(400).json({ error: "Email already exists" });
+  }
+  return userDoc;
+};
 
-exports.emailCorrect = async (firestore,collectionName,email,res) =>{
-    const userDoc = await firestore.collection(collectionName).doc(email).get();
-    if (!userDoc.exists) {
-      return res.status(400).json({ error: "Invalid email or password" });
-    }
-    return userDoc
-}
+exports.emailCorrect = async (firestore, collectionName, email, res) => {
+  const userDoc = await firestore.collection(collectionName).doc(email).get();
+  if (!userDoc.exists) {
+    return res.status(400).json({ error: "Invalid email or password" });
+  }
+  return userDoc;
+};
 
+exports.passwordHashing = async (password) => {
+  const hashedPassword = await bcrypt.hash(password, 10);
+  return hashedPassword;
+};
 
-exports.passwordHashing = async (password) =>{
-    const hashedPassword = await bcrypt.hash(password, 10);
-    return hashedPassword
-}
-exports.passwordCorrect = async (inputPassword,actualPassword,res) =>{
-    const passwordMatch = await bcrypt.compare(inputPassword, actualPassword);
-    if (!passwordMatch) {
-      return res.status(400).json({ error: "Invalid email or password" });
-    }
-}
+exports.passwordCorrect = async (inputPassword, actualPassword, res) => {
+  const passwordMatch = await bcrypt.compare(inputPassword, actualPassword);
+  if (!passwordMatch) {
+    return res.status(400).json({ error: "Invalid email or password" });
+  }
+};
 
-exports.addUser = async (firestore,collectionName,email,password,role) =>{
-    const newDoc = await firestore.collection(collectionName).doc(email).set({
-        email,
-        password,
-        role,
-        isDisabled: false,
-      });
-    return newDoc
-}
+exports.addUser = async (firestore, collectionName, email, password, role) => {
+  const newDoc = await firestore.collection(collectionName).doc(email).set({
+    email,
+    password,
+    role,
+    isDisabled: false,
+  });
+  return newDoc;
+};
 
+exports.isDisabledCheck = (data, res) => {
+  if (data.isDisabled == true) {
+    return res.status(400).json({ error: "Your account is deactivated" });
+  }
+};
 
-exports.isDisabledCheck = (data,res) => {
-    if (data.isDisabled == true) {
-        return res
-          .status(400)
-          .json({ error: "Your account is deactivated" });
-      }
-}
+exports.jwtTokenGenerate = (email, role) => {
+  const token = jwt.sign({ email, role }, process.env.SECRET, {
+    expiresIn: "10h",
+  });
+  return token;
+};
 
-exports.jwtTokenGenerate = (email, role ) =>{
-    const token = jwt.sign({ email, role}, process.env.SECRET, {
-        expiresIn: "10h",
-      });
-      return token
-}
+exports.updatePassword = async (firestore, collectionName, email, password) => {
+  const update = await firestore
+    .collection(collectionName)
+    .doc(email)
+    .update({ password });
+  return update;
+};
 
-exports.updatePassword = async (firestore,collectionName,email,password)=>{
-    const update = await firestore
-      .collection(collectionName)
-       .doc(email)
-       .update({ password });
-    return update
-}
-
-exports.deactivateUserService = async (firestore,collectionName,email,disabled) => {
-   const data = await firestore
+exports.deactivateUserService = async (
+  firestore,
+  collectionName,
+  email,
+  disabled
+) => {
+  const data = await firestore
     .collection(collectionName)
     .doc(email)
     .update({ isDisabled: disabled });
 
-    return data
-}
+  return data;
+};
 
-exports.adminCheck = (role,res) => {
-    if (role !== "admin") {
-        return res
-          .status(400)
-          .json({ message: "You are not admin. Only admins have the access" });
-      }
-}
+exports.adminCheck = (role, res) => {
+  if (role !== "admin") {
+    return res
+      .status(400)
+      .json({ message: "You are not admin. Only admins have the access" });
+  }
+};
 
-exports.deleteUserService = async(firestore,collectionName,email)=>{
-
-    const data = await firestore.collection(collectionName).doc(email).delete();
-    return data
-}
+exports.deleteUserService = async (firestore, collectionName, email) => {
+  const data = await firestore.collection(collectionName).doc(email).delete();
+  return data;
+};
