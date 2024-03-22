@@ -101,13 +101,13 @@ exports.getOrders = async (
   };
 
   if(activeStatus === "all"){
-    ordersQuery = await ordersQuery.where("status","in",[["pending,shipped"]]).get()
+    ordersQuery = await ordersQuery.where("status","in",["pending","shipped"]).get()
   }else{
     ordersQuery = await ordersQuery.where("status","==",activeStatus).get()
   }
   
   if(completedStatus === "all"){
-    SecOrderQuery =await SecOrderQuery.where("status","array-contains-any",["paid,awaiting"]).get()
+    SecOrderQuery =await SecOrderQuery.where("status","in",["paid","awaiting"]).get()
   }else{
     SecOrderQuery =await SecOrderQuery.where("status","==",completedStatus).get()
   }
