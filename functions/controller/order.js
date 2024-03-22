@@ -1,12 +1,9 @@
-const orderCollection = "orders";
-const admin = require("firebase-admin");
-const { createOrder, getOrders, filterOrder } = require("../service/order");
+const { createOrder, getOrders } = require("../service/order");
 const moment = require("moment");
 
 exports.createOrderController = async (req, res) => {
   const user = req.user;
   const email = user.email;
-  const firestore = admin.firestore();
 
   const { name, date, amount } = req.body;
 
@@ -18,8 +15,7 @@ exports.createOrderController = async (req, res) => {
       );
   }
 
-  const data = await createOrder(firestore, orderCollection, email, req.body);
-  console.log(data, "data");
+  const data = await createOrder(email, req.body);
 
   res.status(200).json({ message: "Order Created" });
 };

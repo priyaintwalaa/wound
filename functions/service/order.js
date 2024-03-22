@@ -1,10 +1,12 @@
 const admin = require("firebase-admin");
 const { Timestamp } = require("firebase-admin/firestore");
+const orderCollection = "orders";
 
-exports.createOrder = async (firestore, collectionName, email, data) => {
+exports.createOrder = async (email, data) => {
+  const firestore = admin.firestore();
   const { name, date, amount } = data;
   const formatedDate = new Date(date);
-  const newOrder = await firestore.collection(collectionName).add({
+  const newOrder = await firestore.collection(orderCollection).add({
     name,
     date: formatedDate,
     amount,
@@ -19,7 +21,7 @@ exports.getOrders = async (userId, startDate, endDate, res) => {
   const endTimestamp = Timestamp.fromDate(endDate);
 
   const ordersSnapshot = await firestore
-    .collection("orders")
+    .collection(orderCollection)
     .where("email", "==", userId)
     .where("date", ">=", startTimestamp)
     .where("date", "<=", endTimestamp)
