@@ -1,6 +1,7 @@
 const orderCollection = "orders";
 const admin = require("firebase-admin");
 const { createOrder, getOrders, filterOrder } = require("../service/order");
+const moment = require("moment");
 
 exports.createOrderController = async (req, res) => {
   const user = req.user;
@@ -27,26 +28,17 @@ exports.getOrderByDays = async (req, res) => {
   const user = req.user;
   const email = user.email;
   const { customStartDate, customEndDate } = req.body;
-  const { days } = req.body
+  const { days } = req.body;
 
-  // Example usage for different time frames
-  const now = new Date();
-
-  // 7 days
-  if(days === 7){
-    // const sevenDaysAgo = filterOrder(now,days)
-    await getOrders(email,days, res);
-  }else if(days === 14){
-    // const fourteenDaysAgo = filterOrder(now,days)
-   await getOrders(email, days, res);
-  }else if( days === 30){
-    // const thirtyDaysAgo = filterOrder(now,days)
-    await getOrders(email, days, res);
-  }else if(days === 90){
-    // const ninetyDaysAgo = filterOrder(now,days)
-   await getOrders(email, days, res);
-  }else{
-    await getOrders(email,365,res)
-    // await  getOrders(email, customStartDate, customEndDate, res);
+  if (days) {
+    const now = new Date();
+    const daysAgo = moment().subtract(days, "days");
+    const startDate = daysAgo.toDate();
+    const endDate = now;
+    await getOrders(email, startDate, endDate, res);
+  } else {
+    const startDate = new Date(customStartDate);
+    const endDate = new Date(customEndDate);
+    await getOrders(email, startDate, endDate, res);
   }
 };
