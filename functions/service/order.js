@@ -1,23 +1,23 @@
 const admin = require("firebase-admin");
 const { Timestamp } = require("firebase-admin/firestore");
 const orderCollection = "orders";
-const getUniqueId = require('firebase-auto-ids');
+const getUniqueId = require("firebase-auto-ids");
 
 exports.createOrder = async (email, data) => {
   const firestore = admin.firestore();
   const { name, date, status, amount } = data;
-  const formatedDate = new Date(date); 
+  const formatedDate = new Date(date);
   const collectionRef = firestore.collection(orderCollection);
 
- const lastOrderRef = await collectionRef.orderBy('id', 'desc').limit(1).get();
- let newId = 1001; // Start with the default first ID
- if (!lastOrderRef.empty) {
-   const lastId = lastOrderRef.docs[0].data().id;
-   newId = lastId + 1;
- }
+  const lastOrderRef = await collectionRef.orderBy("id", "desc").limit(1).get();
+  let newId = 1001; // Start with the default first ID
+  if (!lastOrderRef.empty) {
+    const lastId = lastOrderRef.docs[0].data().id;
+    newId = lastId + 1;
+  }
 
   const newOrder = await collectionRef.doc(newId.toString()).set({
-    id:newId,
+    id: newId,
     name,
     date: formatedDate,
     amount,
@@ -45,19 +45,28 @@ exports.getOrders = async (
     .where("date", ">=", startTimestamp)
     .where("date", "<=", endTimestamp)
     .get();
-  // const orders = [];
+
   const orders = {
     activeOrders: [],
     completedOrders: [],
   };
+
   ordersSnapshot.forEach((doc) => {
     const order = doc.data();
     // Active Orders
-    if (order.status === activeStatus) {
+    if (activeStatus === "all") {
+      if (order.status === "pending" || order.status === "shipped") {
+        orders.activeOrders.push(order);
+      }
+    } else if (order.status === activeStatus) {
       orders.activeOrders.push(order);
     }
     //Completed Orders
-    if (order.status === completedStatus) {
+    if (completedStatus === "all") {
+      if (order.status === "awaiting" || order.status === "paid") {
+        orders.completedOrders.push(order);
+      }
+    } else if (order.status === completedStatus) {
       orders.completedOrders.push(order);
     }
   });
