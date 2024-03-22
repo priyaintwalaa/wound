@@ -26,6 +26,54 @@ exports.createOrder = async (email, data) => {
   });
 };
 
+// exports.getOrders = async (
+//   userId,
+//   startDate,
+//   endDate,
+//   activeStatus,
+//   completedStatus,
+//   res
+// ) => {
+//   const firestore = admin.firestore();
+
+//   const startTimestamp = Timestamp.fromDate(startDate);
+//   const endTimestamp = Timestamp.fromDate(endDate);
+
+//   const ordersSnapshot = await firestore
+//     .collection(orderCollection)
+//     .where("email", "==", userId)
+//     .where("date", ">=", startTimestamp)
+//     .where("date", "<=", endTimestamp)
+//     .get();
+
+//   const orders = {
+//     activeOrders: [],
+//     completedOrders: [],
+//   };
+
+//   ordersSnapshot.forEach((doc) => {
+//     const order = doc.data();
+//     // Active Orders
+//     if (activeStatus === "all") {
+//       if (order.status === "pending" || order.status === "shipped") {
+//         orders.activeOrders.push(order);
+//       }
+//     } else if (order.status === activeStatus) {
+//       orders.activeOrders.push(order);
+//     }
+//     //Completed Orders
+//     if (completedStatus === "all") {
+//       if (order.status === "awaiting" || order.status === "paid") {
+//         orders.completedOrders.push(order);
+//       }
+//     } else if (order.status === completedStatus) {
+//       orders.completedOrders.push(order);
+//     }
+//   });
+//   res.status(200).json(orders);
+// };
+
+
 exports.getOrders = async (
   userId,
   startDate,
@@ -39,36 +87,39 @@ exports.getOrders = async (
   const startTimestamp = Timestamp.fromDate(startDate);
   const endTimestamp = Timestamp.fromDate(endDate);
 
-  const ordersSnapshot = await firestore
+  let ordersQuery = firestore
     .collection(orderCollection)
     .where("email", "==", userId)
     .where("date", ">=", startTimestamp)
     .where("date", "<=", endTimestamp)
-    .get();
+
+  let SecOrderQuery = ordersQuery
 
   const orders = {
     activeOrders: [],
     completedOrders: [],
   };
 
-  ordersSnapshot.forEach((doc) => {
-    const order = doc.data();
-    // Active Orders
-    if (activeStatus === "all") {
-      if (order.status === "pending" || order.status === "shipped") {
-        orders.activeOrders.push(order);
-      }
-    } else if (order.status === activeStatus) {
-      orders.activeOrders.push(order);
-    }
-    //Completed Orders
-    if (completedStatus === "all") {
-      if (order.status === "awaiting" || order.status === "paid") {
-        orders.completedOrders.push(order);
-      }
-    } else if (order.status === completedStatus) {
-      orders.completedOrders.push(order);
-    }
-  });
+  if(activeStatus === "all"){
+    ordersQuery = await ordersQuery.where("status","in",[["pending,shipped"]]).get()
+  }else{
+    ordersQuery = await ordersQuery.where("status","==",activeStatus).get()
+  }
+  
+  if(completedStatus === "all"){
+    SecOrderQuery =await SecOrderQuery.where("status","array-contains-any",["paid,awaiting"]).get()
+  }else{
+    SecOrderQuery =await SecOrderQuery.where("status","==",completedStatus).get()
+  }
+
+  ordersQuery.forEach((doc)=>{
+    const order = doc.data()
+    orders.activeOrders.push(order)
+  })
+
+  SecOrderQuery.forEach((doc)=>{
+    const order = doc.data()
+    orders.completedOrders.push(order)
+  })
   res.status(200).json(orders);
 };
