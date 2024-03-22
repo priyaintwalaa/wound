@@ -4,7 +4,7 @@ const { createOrderController, getOrderByDays } = require('../controller/order')
 
 const router = express.Router()
 
+router.get('/',requireSignIn,getOrderByDays)
 router.post('/',requireSignIn,createOrderController)
-router.post('/days',requireSignIn,getOrderByDays)
 
 module.exports = router

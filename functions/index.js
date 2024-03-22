@@ -12,6 +12,8 @@ admin.initializeApp({
 
 const app = express()
 
+app.use(express.json())
+
 app.use('/',userRoutes)
 app.use('/order',orderRoutes)
 
