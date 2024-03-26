@@ -1,7 +1,6 @@
 const admin = require("firebase-admin");
 const { Timestamp } = require("firebase-admin/firestore");
 const orderCollection = "orders";
-const getUniqueId = require("firebase-auto-ids");
 
 exports.createOrder = async (email, data) => {
   const firestore = admin.firestore();
@@ -53,7 +52,7 @@ exports.createOrder = async (email, data) => {
         statuses[key] = value;
       }
     });
-    
+
     let SecOrderQuery = ordersQuery
 
     const orders = {

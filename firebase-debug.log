@@ -1873,3 +1873,146 @@ INFO: Connected to new websocket client
 
 [debug] [2024-03-26T08:12:47.749Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
 [info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T08:14:04.584Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T08:14:05.586Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T08:14:05.947Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T08:14:05.948Z] Building nodejs source
+[debug] [2024-03-26T08:14:05.948Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T08:14:05.948Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T08:14:05.949Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8923
+
+[error] ReferenceError: xin is not defined
+    at Object.<anonymous> (/home/bacancy/Documents/woundProject/functions/service/order.js:87:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (/home/bacancy/Documents/woundProject/functions/controller/order.js:1:36)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+
+[debug] [2024-03-26T08:14:06.151Z] Got response code 400; body Failed to generate manifest from function source: ReferenceError: xin is not defined
+[debug] [2024-03-26T08:14:06.292Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T08:14:07.293Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T08:14:07.659Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T08:14:07.659Z] Building nodejs source
+[debug] [2024-03-26T08:14:07.659Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T08:14:07.660Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T08:14:07.660Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8967
+
+[debug] [2024-03-26T08:14:07.941Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T08:16:21.305Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T08:16:22.305Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T08:16:22.832Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T08:16:22.832Z] Building nodejs source
+[debug] [2024-03-26T08:16:22.832Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T08:16:22.833Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T08:16:22.834Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8393
+
+[debug] [2024-03-26T08:16:23.086Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
