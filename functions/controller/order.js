@@ -1,5 +1,5 @@
 const { createOrder, getOrders } = require("../service/order");
-const moment = require("moment");
+const { DateTime } = require('luxon');
 
 exports.createOrderController = async (req, res) => {
   const user = req.user;
@@ -33,10 +33,11 @@ exports.getOrderByDays = async (req, res) => {
   } = req.query;
 
   if (days) {
-    const now = new Date();
-    const daysAgo = moment().subtract(+days, "days");
-    const startDate = daysAgo.toDate();
-    const endDate = now;
+    const now = DateTime.now();
+    const daysAgo = now.minus({ days: +days });
+    const startDate = daysAgo.toJSDate();
+    const endDate = now.toJSDate();
+    
     await getOrders(
       email,
       startDate,
@@ -45,8 +46,8 @@ exports.getOrderByDays = async (req, res) => {
       res
     );
   } else {
-    const startDate = new Date(customStartDate);
-    const endDate = new Date(customEndDate);
+    const startDate = DateTime.fromISO(customStartDate).toJSDate();
+    const endDate = DateTime.fromISO(customEndDate).toJSDate();
     await getOrders(
       email,
       startDate,

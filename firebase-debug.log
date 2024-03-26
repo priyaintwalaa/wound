@@ -919,3 +919,957 @@ INFO: Detected HTTP/2 connection.
 [debug] [2024-03-26T05:56:45.974Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
 [info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
 [info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T06:27:56.153Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T06:27:57.154Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:27:57.562Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:27:57.562Z] Building nodejs source
+[debug] [2024-03-26T06:27:57.562Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:27:57.563Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:27:57.563Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8586
+
+[debug] [2024-03-26T06:27:57.805Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T06:31:18.610Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T06:31:19.611Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:31:19.987Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:31:19.987Z] Building nodejs source
+[debug] [2024-03-26T06:31:19.987Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:31:19.988Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:31:19.989Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8639
+
+[debug] [2024-03-26T06:31:20.267Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T06:31:21.230Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T06:31:22.231Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:31:22.624Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:31:22.624Z] Building nodejs source
+[debug] [2024-03-26T06:31:22.624Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:31:22.625Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:31:22.625Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8119
+
+[debug] [2024-03-26T06:31:22.880Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T06:31:34.492Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T06:31:35.493Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:31:35.882Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:31:35.882Z] Building nodejs source
+[debug] [2024-03-26T06:31:35.882Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:31:35.883Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:31:35.884Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8129
+
+[debug] [2024-03-26T06:31:36.202Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T06:31:36.738Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T06:31:37.739Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:31:38.198Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:31:38.199Z] Building nodejs source
+[debug] [2024-03-26T06:31:38.199Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:31:38.200Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:31:38.200Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8914
+
+[error] Error: Cannot find module 'luxon'
+Require stack:
+- /home/bacancy/Documents/woundProject/functions/controller/order.js
+- /home/bacancy/Documents/woundProject/functions/routes/order.js
+- /home/bacancy/Documents/woundProject/functions/index.js
+- /home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/runtime/loader.js
+- /home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (/home/bacancy/Documents/woundProject/functions/controller/order.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/bacancy/Documents/woundProject/functions/controller/order.js',
+    '/home/bacancy/Documents/woundProject/functions/routes/order.js',
+    '/home/bacancy/Documents/woundProject/functions/index.js',
+    '/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/runtime/loader.js',
+    '/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js'
+  ]
+}
+
+[debug] [2024-03-26T06:31:38.493Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module 'luxon'
+Require stack:
+- /home/bacancy/Documents/woundProject/functions/controller/order.js
+- /home/bacancy/Documents/woundProject/functions/routes/order.js
+- /home/bacancy/Documents/woundProject/functions/index.js
+- /home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/runtime/loader.js
+- /home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/bin/firebase-functions.js
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-03-26T06:32:52.224Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T06:32:53.224Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:32:53.670Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:32:53.670Z] Building nodejs source
+[debug] [2024-03-26T06:32:53.670Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:32:53.671Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:32:53.672Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8962
+
+[debug] [2024-03-26T06:32:53.949Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T06:32:57.959Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T06:32:58.961Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:32:59.336Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:32:59.337Z] Building nodejs source
+[debug] [2024-03-26T06:32:59.337Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:32:59.338Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:32:59.338Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8339
+
+[debug] [2024-03-26T06:32:59.591Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T06:34:38.056Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T06:34:38.056Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T06:34:38.057Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T06:34:38.056Z"],"workRunningCount":1}
+[debug] [2024-03-26T06:34:38.057Z] Accepted request POST /wound-firebase/us-central1/wound/order --> us-central1-wound
+[debug] [2024-03-26T06:34:38.059Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T06:34:38.059Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order"}}
+[debug] [2024-03-26T06:34:38.059Z] [worker-pool] Cleaned up workers for us-central1-wound: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-wound: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:34:38.062Z] [worker-pool] addWorker(us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-wound)"}}
+[debug] [2024-03-26T06:34:38.062Z] [worker-pool] Adding worker with key us-central1-wound, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-wound, total=1"}}
+[debug] [2024-03-26T06:34:38.525Z] [runtime-status] [16987] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-26T06:34:38.526Z] [runtime-status] [16987] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T06:34:38.526Z] [runtime-status] [16987] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-03-26T06:34:38.526Z] [runtime-status] [16987] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T06:34:38.622Z] [runtime-status] [16987] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-03-26T06:34:38.622Z] [runtime-status] [16987] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2024-03-26T06:34:38.622Z] [runtime-status] [16987] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T06:34:38.622Z] [runtime-status] [16987] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-26T06:34:38.623Z] [runtime-status] [16987] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T06:34:38.624Z] [runtime-status] [16987] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-03-26T06:34:38.728Z] [runtime-status] [16987] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"wound-firebase","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+3vYM9i3iDTLo\nFyig9RIwevbpi0Ce4uTXCReJRoKpBrBoi1bINpmFlI4U4RhkTW23TTGkpWB6TCWj\n/73wYxiIHB82ECr4Jt0aWIIRg0VVMfEXUJ8ELSnvektvEvShOewreF0SquumAIW0\nLHJa10UcKJaLGscTYZ9HinV7+HEOVpfdJVtYFOlGW+NutjCgBgYlxAAVPInM3Rme\noQwDpIIlzbr7MuTMgMAITD3fjNTVOnFpowYURNJJrFDix5gM2JhfyFZZeSe+DQVz\nyPoz65afkXCYRZ6UpJIovKk0TNihGoIURCjbxIpmTvwjH/sghmsR6knr8QVF+19y\ncTVVArZFAgMBAAECggEAGjM4yyavvavaJQmoxg9d49G9OummgSjcCLhyxqErJlCI\nvpEB5JG6GR//MNaFJp+KQ/MQsW0SBTeWoyBjzi+MGoLhteYaP93107v6frTqO3uT\ngIPMkCIy83ByElkjw03UIVNwUzOrDSpdMBI50EZkci0QHSAb24k29/cFkXLU8gar\nz1Ko82T48W18gjUNU2XKBneGVD3mELO2UbYJK9D7P0W7S7qMFRnXiQ3ISOXvm9mI\nl2Jsm3gHImzU2dIaS9uP4MffN+Hw9xirhF2V614JMNcdRZocTgtaSD5ZXXFs/ejB\noaHMz95SMxSPnLBfn/F0B6AFv/OORtPIXckv8R7EsQKBgQD4jbKxWeQzvr6vsFBe\nDyWiYSFFlzy/auApbmfwjMS7PCZFfzzoP5u/ez6vAn2tdQ1wwgPGNOPwTxFpYBtF\nLsa9g8brfm4KdDN9XoxVyHngxbewPQlllInnKkeg/r1eEiS2dAsQsDW4JGrhG9i1\n976ydF7rGTvlfJyJDlX04yujawKBgQDEltyhZbgnvsBvDpoyZYh5Rj33vQ25zbug\n7F8LP34Ga/WzIzxzn/aDfCs6qwZ9CaI7tKBjVUlcKSlwJJEdij07JgBHdkW2PojA\nvXGfCutDXyKKm+hG4hAvurYYmz5dGIdlHMR28RMlFaWmqQdnTH3Y6XdpS8ijpVeT\nTS7H8tgpDwKBgA2UyIfSTprZOFgnPSz2jOrjfcrsqaAX+empo7pMJs/ISJsRicVy\n/FKpLFKpwy5AMBzSLRyedToDSANHAhZ0qN1gHvVtMhwWH14hVW+2hZpXk2Lo4uOP\nCz37XHCamsRSH3lsu9IMntLSApkMSXof8GaV3z3fYht3BKKkiuPXqeHDAoGAffus\nMqZsSNQ+oC08dhWJSybPqYb3V95XYr53/k5XJihjkcSABh06LnMRhQx7IQBefmK3\n8lCCrdQXIS3d7Y9cxB4LScCq1irnGpWNTf4CXO+HxEo7pclT1DKUZdp/Mcv5YLv5\nz7uYqEhiGxbxjqp/b9XWV51gXDcmk1iAJVUkX9MCgYEA5UhzVd1FhbK5vfhP5mtj\n3GBoEejBtRjaLYCGqcZQcKjCUv4EDdzX7LPEODe0FX8BPIYp0eiAT1oWfenNJMTI\nc5PR4e/h4B0v6Ya/I/IbD2BYxaru5olc5i1Tfzarp1mp3lUKfFqunpN3V3AINUY/\nLpMGmti9PN1qBm4wIQUwYjk=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-dgmii@wound-firebase.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}},"databaseURL":"https://wound-firebase.firebaseio.com"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"wound-firebase\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+3vYM9i3iDTLo\\nFyig9RIwevbpi0Ce4uTXCReJRoKpBrBoi1bINpmFlI4U4RhkTW23TTGkpWB6TCWj\\n/73wYxiIHB82ECr4Jt0aWIIRg0VVMfEXUJ8ELSnvektvEvShOewreF0SquumAIW0\\nLHJa10UcKJaLGscTYZ9HinV7+HEOVpfdJVtYFOlGW+NutjCgBgYlxAAVPInM3Rme\\noQwDpIIlzbr7MuTMgMAITD3fjNTVOnFpowYURNJJrFDix5gM2JhfyFZZeSe+DQVz\\nyPoz65afkXCYRZ6UpJIovKk0TNihGoIURCjbxIpmTvwjH/sghmsR6knr8QVF+19y\\ncTVVArZFAgMBAAECggEAGjM4yyavvavaJQmoxg9d49G9OummgSjcCLhyxqErJlCI\\nvpEB5JG6GR//MNaFJp+KQ/MQsW0SBTeWoyBjzi+MGoLhteYaP93107v6frTqO3uT\\ngIPMkCIy83ByElkjw03UIVNwUzOrDSpdMBI50EZkci0QHSAb24k29/cFkXLU8gar\\nz1Ko82T48W18gjUNU2XKBneGVD3mELO2UbYJK9D7P0W7S7qMFRnXiQ3ISOXvm9mI\\nl2Jsm3gHImzU2dIaS9uP4MffN+Hw9xirhF2V614JMNcdRZocTgtaSD5ZXXFs/ejB\\noaHMz95SMxSPnLBfn/F0B6AFv/OORtPIXckv8R7EsQKBgQD4jbKxWeQzvr6vsFBe\\nDyWiYSFFlzy/auApbmfwjMS7PCZFfzzoP5u/ez6vAn2tdQ1wwgPGNOPwTxFpYBtF\\nLsa9g8brfm4KdDN9XoxVyHngxbewPQlllInnKkeg/r1eEiS2dAsQsDW4JGrhG9i1\\n976ydF7rGTvlfJyJDlX04yujawKBgQDEltyhZbgnvsBvDpoyZYh5Rj33vQ25zbug\\n7F8LP34Ga/WzIzxzn/aDfCs6qwZ9CaI7tKBjVUlcKSlwJJEdij07JgBHdkW2PojA\\nvXGfCutDXyKKm+hG4hAvurYYmz5dGIdlHMR28RMlFaWmqQdnTH3Y6XdpS8ijpVeT\\nTS7H8tgpDwKBgA2UyIfSTprZOFgnPSz2jOrjfcrsqaAX+empo7pMJs/ISJsRicVy\\n/FKpLFKpwy5AMBzSLRyedToDSANHAhZ0qN1gHvVtMhwWH14hVW+2hZpXk2Lo4uOP\\nCz37XHCamsRSH3lsu9IMntLSApkMSXof8GaV3z3fYht3BKKkiuPXqeHDAoGAffus\\nMqZsSNQ+oC08dhWJSybPqYb3V95XYr53/k5XJihjkcSABh06LnMRhQx7IQBefmK3\\n8lCCrdQXIS3d7Y9cxB4LScCq1irnGpWNTf4CXO+HxEo7pclT1DKUZdp/Mcv5YLv5\\nz7uYqEhiGxbxjqp/b9XWV51gXDcmk1iAJVUkX9MCgYEA5UhzVd1FhbK5vfhP5mtj\\n3GBoEejBtRjaLYCGqcZQcKjCUv4EDdzX7LPEODe0FX8BPIYp0eiAT1oWfenNJMTI\\nc5PR4e/h4B0v6Ya/I/IbD2BYxaru5olc5i1Tfzarp1mp3lUKfFqunpN3V3AINUY/\\nLpMGmti9PN1qBm4wIQUwYjk=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-dgmii@wound-firebase.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}},\"databaseURL\":\"https://wound-firebase.firebaseio.com\"}"}}
+[debug] [2024-03-26T06:34:38.733Z] [runtime-status] [16987] Functions runtime initialized. {"cwd":"/home/bacancy/Documents/woundProject/functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] Functions runtime initialized. {\"cwd\":\"/home/bacancy/Documents/woundProject/functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2024-03-26T06:34:38.734Z] [runtime-status] [16987] Listening to port: /tmp/fire_emu_f89905082111e815.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [16987] Listening to port: /tmp/fire_emu_f89905082111e815.sock"}}
+[debug] [2024-03-26T06:34:38.772Z] [worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: IDLE"}}
+[debug] [2024-03-26T06:34:38.772Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T06:34:38.772Z] [worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: BUSY"}}
+[debug] [2024-03-26T06:34:38.940Z] Mar 26, 2024 12:04:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 26, 2024 12:04:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2024-03-26T06:34:38.970Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 198.287504ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 198.287504ms"}}
+[debug] [2024-03-26T06:34:38.971Z] [worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: IDLE"}}
+[debug] [2024-03-26T06:34:38.971Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T06:34:38.971Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T06:34:38.971Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T06:35:07.510Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T06:35:07.510Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T06:35:07.510Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T06:35:07.510Z"],"workRunningCount":1}
+[debug] [2024-03-26T06:35:07.510Z] Accepted request GET /wound-firebase/us-central1/wound/order?days=90&status=active-shipped,completed-paid --> us-central1-wound
+[debug] [2024-03-26T06:35:07.513Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T06:35:07.513Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-shipped,completed-paid, mapping to path=/order?days=90&status=active-shipped,completed-paid {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-shipped,completed-paid, mapping to path=/order?days=90&status=active-shipped,completed-paid"}}
+[debug] [2024-03-26T06:35:07.513Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T06:35:07.513Z] [worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: BUSY"}}
+[info] >  priyaintwala5@gmail.com {"user":"priyaintwala5@gmail.com","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m priyaintwala5@gmail.com"}}
+[info] >  /home/bacancy/Documents/woundProject/functions/node_modules/@google-cloud/firestore/build/src/timestamp.js:115 {"user":"/home/bacancy/Documents/woundProject/functions/node_modules/@google-cloud/firestore/build/src/timestamp.js:115","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m /home/bacancy/Documents/woundProject/functions/node_modules/@google-cloud/firestore/build/src/timestamp.js:115"}}
+[info] >          return Timestamp.fromMillis(date.getTime()); {"user":"        return Timestamp.fromMillis(date.getTime());","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m         return Timestamp.fromMillis(date.getTime());"}}
+[info] >                                           ^ {"user":"                                         ^","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m                                          ^"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  TypeError: date.getTime is not a function {"user":"TypeError: date.getTime is not a function","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m TypeError: date.getTime is not a function"}}
+[info] >      at Timestamp.fromDate (/home/bacancy/Documents/woundProject/functions/node_modules/@google-cloud/firestore/build/src/timestamp.js:115:42) {"user":"    at Timestamp.fromDate (/home/bacancy/Documents/woundProject/functions/node_modules/@google-cloud/firestore/build/src/timestamp.js:115:42)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Timestamp.fromDate (/home/bacancy/Documents/woundProject/functions/node_modules/@google-cloud/firestore/build/src/timestamp.js:115:42)"}}
+[info] >      at exports.getOrders (/home/bacancy/Documents/woundProject/functions/service/order.js:40:36) {"user":"    at exports.getOrders (/home/bacancy/Documents/woundProject/functions/service/order.js:40:36)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at exports.getOrders (/home/bacancy/Documents/woundProject/functions/service/order.js:40:36)"}}
+[info] >      at exports.getOrderByDays (/home/bacancy/Documents/woundProject/functions/controller/order.js:45:11) {"user":"    at exports.getOrderByDays (/home/bacancy/Documents/woundProject/functions/controller/order.js:45:11)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at exports.getOrderByDays (/home/bacancy/Documents/woundProject/functions/controller/order.js:45:11)"}}
+[info] >      at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[info] >      at next (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:149:13) {"user":"    at next (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:149:13)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:149:13)"}}
+[info] >      at exports.requireSignIn (/home/bacancy/Documents/woundProject/functions/middleware/authMiddleware.js:12:13) {"user":"    at exports.requireSignIn (/home/bacancy/Documents/woundProject/functions/middleware/authMiddleware.js:12:13)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at exports.requireSignIn (/home/bacancy/Documents/woundProject/functions/middleware/authMiddleware.js:12:13)"}}
+[info] >      at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[info] >      at next (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:149:13) {"user":"    at next (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:149:13)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:149:13)"}}
+[info] >      at Route.dispatch (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:119:3) {"user":"    at Route.dispatch (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:119:3)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Route.dispatch (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:119:3)"}}
+[info] >      at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  Node.js v20.10.0 {"user":"Node.js v20.10.0","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v20.10.0"}}
+[error] i  Request to function failed: Error: socket hang up {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Request to function failed: Error: socket hang up"}}
+[debug] [2024-03-26T06:35:07.592Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T06:35:07.593Z] [worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: exited"}}
+[debug] [2024-03-26T06:35:07.594Z] [worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-14d9a732-e578-401e-b01a-24456658dd2d]: FINISHED"}}
+[debug] [2024-03-26T06:38:46.582Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T06:38:47.583Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:38:47.994Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:38:47.994Z] Building nodejs source
+[debug] [2024-03-26T06:38:47.995Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:38:47.995Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:38:47.996Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8576
+
+[error] /home/bacancy/Documents/woundProject/functions/controller/order.js:43
+    const endDate = now.;
+                        ^
+
+SyntaxError: Unexpected token ';'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (/home/bacancy/Documents/woundProject/functions/routes/order.js:3:51)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+
+[debug] [2024-03-26T06:38:48.221Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token ';'
+[debug] [2024-03-26T06:38:49.275Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T06:38:50.276Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:38:50.665Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:38:50.665Z] Building nodejs source
+[debug] [2024-03-26T06:38:50.665Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:38:50.666Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:38:50.666Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8684
+
+[debug] [2024-03-26T06:38:50.895Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T06:38:52.660Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-03-26T06:38:53.661Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:38:54.043Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:38:54.043Z] Building nodejs source
+[debug] [2024-03-26T06:38:54.044Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:38:54.047Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:38:54.047Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8820
+
+[debug] [2024-03-26T06:38:54.291Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T06:38:55.560Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T06:38:56.560Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:38:56.937Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:38:56.937Z] Building nodejs source
+[debug] [2024-03-26T06:38:56.937Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:38:56.938Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:38:56.938Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8878
+
+[debug] [2024-03-26T06:38:57.182Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T06:39:00.772Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T06:39:00.772Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T06:39:00.772Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T06:39:00.772Z"],"workRunningCount":1}
+[debug] [2024-03-26T06:39:00.772Z] Accepted request GET /wound-firebase/us-central1/wound/order?days=90&status=active-shipped,completed-paid --> us-central1-wound
+[debug] [2024-03-26T06:39:00.775Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T06:39:00.775Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-shipped,completed-paid, mapping to path=/order?days=90&status=active-shipped,completed-paid {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-shipped,completed-paid, mapping to path=/order?days=90&status=active-shipped,completed-paid"}}
+[debug] [2024-03-26T06:39:00.775Z] [worker-pool] Cleaned up workers for us-central1-wound: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-wound: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:39:00.778Z] [worker-pool] addWorker(us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-wound)"}}
+[debug] [2024-03-26T06:39:00.779Z] [worker-pool] Adding worker with key us-central1-wound, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-wound, total=1"}}
+[debug] [2024-03-26T06:39:01.256Z] [runtime-status] [17610] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-26T06:39:01.256Z] [runtime-status] [17610] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T06:39:01.257Z] [runtime-status] [17610] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-03-26T06:39:01.257Z] [runtime-status] [17610] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T06:39:01.354Z] [runtime-status] [17610] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-03-26T06:39:01.354Z] [runtime-status] [17610] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2024-03-26T06:39:01.355Z] [runtime-status] [17610] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T06:39:01.355Z] [runtime-status] [17610] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-26T06:39:01.356Z] [runtime-status] [17610] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T06:39:01.356Z] [runtime-status] [17610] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-03-26T06:39:01.463Z] [runtime-status] [17610] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"wound-firebase","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+3vYM9i3iDTLo\nFyig9RIwevbpi0Ce4uTXCReJRoKpBrBoi1bINpmFlI4U4RhkTW23TTGkpWB6TCWj\n/73wYxiIHB82ECr4Jt0aWIIRg0VVMfEXUJ8ELSnvektvEvShOewreF0SquumAIW0\nLHJa10UcKJaLGscTYZ9HinV7+HEOVpfdJVtYFOlGW+NutjCgBgYlxAAVPInM3Rme\noQwDpIIlzbr7MuTMgMAITD3fjNTVOnFpowYURNJJrFDix5gM2JhfyFZZeSe+DQVz\nyPoz65afkXCYRZ6UpJIovKk0TNihGoIURCjbxIpmTvwjH/sghmsR6knr8QVF+19y\ncTVVArZFAgMBAAECggEAGjM4yyavvavaJQmoxg9d49G9OummgSjcCLhyxqErJlCI\nvpEB5JG6GR//MNaFJp+KQ/MQsW0SBTeWoyBjzi+MGoLhteYaP93107v6frTqO3uT\ngIPMkCIy83ByElkjw03UIVNwUzOrDSpdMBI50EZkci0QHSAb24k29/cFkXLU8gar\nz1Ko82T48W18gjUNU2XKBneGVD3mELO2UbYJK9D7P0W7S7qMFRnXiQ3ISOXvm9mI\nl2Jsm3gHImzU2dIaS9uP4MffN+Hw9xirhF2V614JMNcdRZocTgtaSD5ZXXFs/ejB\noaHMz95SMxSPnLBfn/F0B6AFv/OORtPIXckv8R7EsQKBgQD4jbKxWeQzvr6vsFBe\nDyWiYSFFlzy/auApbmfwjMS7PCZFfzzoP5u/ez6vAn2tdQ1wwgPGNOPwTxFpYBtF\nLsa9g8brfm4KdDN9XoxVyHngxbewPQlllInnKkeg/r1eEiS2dAsQsDW4JGrhG9i1\n976ydF7rGTvlfJyJDlX04yujawKBgQDEltyhZbgnvsBvDpoyZYh5Rj33vQ25zbug\n7F8LP34Ga/WzIzxzn/aDfCs6qwZ9CaI7tKBjVUlcKSlwJJEdij07JgBHdkW2PojA\nvXGfCutDXyKKm+hG4hAvurYYmz5dGIdlHMR28RMlFaWmqQdnTH3Y6XdpS8ijpVeT\nTS7H8tgpDwKBgA2UyIfSTprZOFgnPSz2jOrjfcrsqaAX+empo7pMJs/ISJsRicVy\n/FKpLFKpwy5AMBzSLRyedToDSANHAhZ0qN1gHvVtMhwWH14hVW+2hZpXk2Lo4uOP\nCz37XHCamsRSH3lsu9IMntLSApkMSXof8GaV3z3fYht3BKKkiuPXqeHDAoGAffus\nMqZsSNQ+oC08dhWJSybPqYb3V95XYr53/k5XJihjkcSABh06LnMRhQx7IQBefmK3\n8lCCrdQXIS3d7Y9cxB4LScCq1irnGpWNTf4CXO+HxEo7pclT1DKUZdp/Mcv5YLv5\nz7uYqEhiGxbxjqp/b9XWV51gXDcmk1iAJVUkX9MCgYEA5UhzVd1FhbK5vfhP5mtj\n3GBoEejBtRjaLYCGqcZQcKjCUv4EDdzX7LPEODe0FX8BPIYp0eiAT1oWfenNJMTI\nc5PR4e/h4B0v6Ya/I/IbD2BYxaru5olc5i1Tfzarp1mp3lUKfFqunpN3V3AINUY/\nLpMGmti9PN1qBm4wIQUwYjk=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-dgmii@wound-firebase.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}},"databaseURL":"https://wound-firebase.firebaseio.com"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"wound-firebase\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+3vYM9i3iDTLo\\nFyig9RIwevbpi0Ce4uTXCReJRoKpBrBoi1bINpmFlI4U4RhkTW23TTGkpWB6TCWj\\n/73wYxiIHB82ECr4Jt0aWIIRg0VVMfEXUJ8ELSnvektvEvShOewreF0SquumAIW0\\nLHJa10UcKJaLGscTYZ9HinV7+HEOVpfdJVtYFOlGW+NutjCgBgYlxAAVPInM3Rme\\noQwDpIIlzbr7MuTMgMAITD3fjNTVOnFpowYURNJJrFDix5gM2JhfyFZZeSe+DQVz\\nyPoz65afkXCYRZ6UpJIovKk0TNihGoIURCjbxIpmTvwjH/sghmsR6knr8QVF+19y\\ncTVVArZFAgMBAAECggEAGjM4yyavvavaJQmoxg9d49G9OummgSjcCLhyxqErJlCI\\nvpEB5JG6GR//MNaFJp+KQ/MQsW0SBTeWoyBjzi+MGoLhteYaP93107v6frTqO3uT\\ngIPMkCIy83ByElkjw03UIVNwUzOrDSpdMBI50EZkci0QHSAb24k29/cFkXLU8gar\\nz1Ko82T48W18gjUNU2XKBneGVD3mELO2UbYJK9D7P0W7S7qMFRnXiQ3ISOXvm9mI\\nl2Jsm3gHImzU2dIaS9uP4MffN+Hw9xirhF2V614JMNcdRZocTgtaSD5ZXXFs/ejB\\noaHMz95SMxSPnLBfn/F0B6AFv/OORtPIXckv8R7EsQKBgQD4jbKxWeQzvr6vsFBe\\nDyWiYSFFlzy/auApbmfwjMS7PCZFfzzoP5u/ez6vAn2tdQ1wwgPGNOPwTxFpYBtF\\nLsa9g8brfm4KdDN9XoxVyHngxbewPQlllInnKkeg/r1eEiS2dAsQsDW4JGrhG9i1\\n976ydF7rGTvlfJyJDlX04yujawKBgQDEltyhZbgnvsBvDpoyZYh5Rj33vQ25zbug\\n7F8LP34Ga/WzIzxzn/aDfCs6qwZ9CaI7tKBjVUlcKSlwJJEdij07JgBHdkW2PojA\\nvXGfCutDXyKKm+hG4hAvurYYmz5dGIdlHMR28RMlFaWmqQdnTH3Y6XdpS8ijpVeT\\nTS7H8tgpDwKBgA2UyIfSTprZOFgnPSz2jOrjfcrsqaAX+empo7pMJs/ISJsRicVy\\n/FKpLFKpwy5AMBzSLRyedToDSANHAhZ0qN1gHvVtMhwWH14hVW+2hZpXk2Lo4uOP\\nCz37XHCamsRSH3lsu9IMntLSApkMSXof8GaV3z3fYht3BKKkiuPXqeHDAoGAffus\\nMqZsSNQ+oC08dhWJSybPqYb3V95XYr53/k5XJihjkcSABh06LnMRhQx7IQBefmK3\\n8lCCrdQXIS3d7Y9cxB4LScCq1irnGpWNTf4CXO+HxEo7pclT1DKUZdp/Mcv5YLv5\\nz7uYqEhiGxbxjqp/b9XWV51gXDcmk1iAJVUkX9MCgYEA5UhzVd1FhbK5vfhP5mtj\\n3GBoEejBtRjaLYCGqcZQcKjCUv4EDdzX7LPEODe0FX8BPIYp0eiAT1oWfenNJMTI\\nc5PR4e/h4B0v6Ya/I/IbD2BYxaru5olc5i1Tfzarp1mp3lUKfFqunpN3V3AINUY/\\nLpMGmti9PN1qBm4wIQUwYjk=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-dgmii@wound-firebase.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}},\"databaseURL\":\"https://wound-firebase.firebaseio.com\"}"}}
+[debug] [2024-03-26T06:39:01.467Z] [runtime-status] [17610] Functions runtime initialized. {"cwd":"/home/bacancy/Documents/woundProject/functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] Functions runtime initialized. {\"cwd\":\"/home/bacancy/Documents/woundProject/functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2024-03-26T06:39:01.468Z] [runtime-status] [17610] Listening to port: /tmp/fire_emu_35414d2fe85f341a.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [17610] Listening to port: /tmp/fire_emu_35414d2fe85f341a.sock"}}
+[debug] [2024-03-26T06:39:01.487Z] [worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: IDLE"}}
+[debug] [2024-03-26T06:39:01.487Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T06:39:01.488Z] [worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: BUSY"}}
+[info] >  priyaintwala5@gmail.com {"user":"priyaintwala5@gmail.com","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m priyaintwala5@gmail.com"}}
+[info] >  shipped statuses {"user":"shipped statuses","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m shipped statuses"}}
+[debug] [2024-03-26T06:39:01.675Z] Mar 26, 2024 12:09:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 26, 2024 12:09:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2024-03-26T06:39:01.704Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 216.667243ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 216.667243ms"}}
+[debug] [2024-03-26T06:39:01.705Z] [worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: IDLE"}}
+[debug] [2024-03-26T06:39:01.705Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T06:39:01.705Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T06:39:01.705Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T06:39:02.191Z] [worker-pool] Shutting down IDLE worker (us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-wound)"}}
+[debug] [2024-03-26T06:39:02.191Z] [worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: FINISHING"}}
+[debug] [2024-03-26T06:39:02.199Z] [worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: exited"}}
+[debug] [2024-03-26T06:39:02.199Z] [worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-d0789539-3528-4c53-b935-e5908ba4de24]: FINISHED"}}
+[debug] [2024-03-26T06:39:59.142Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T06:40:00.143Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:40:00.521Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:40:00.522Z] Building nodejs source
+[debug] [2024-03-26T06:40:00.522Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:40:00.522Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:40:00.523Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8173
+
+[debug] [2024-03-26T06:40:00.791Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T06:40:01.731Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T06:40:02.732Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T06:40:03.102Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T06:40:03.102Z] Building nodejs source
+[debug] [2024-03-26T06:40:03.102Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T06:40:03.103Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T06:40:03.104Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8937
+
+[debug] [2024-03-26T06:40:03.354Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T07:16:59.773Z] Mar 26, 2024 12:46:59 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 26, 2024 12:46:59 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2024-03-26T08:10:49.969Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T08:10:50.970Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T08:10:51.414Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T08:10:51.414Z] Building nodejs source
+[debug] [2024-03-26T08:10:51.414Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T08:10:51.415Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T08:10:51.416Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8158
+
+[debug] [2024-03-26T08:10:51.763Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T08:11:21.402Z] Mar 26, 2024 1:41:21 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 26, 2024 1:41:21 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2024-03-26T08:12:16.533Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T08:12:17.535Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T08:12:17.939Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T08:12:17.939Z] Building nodejs source
+[debug] [2024-03-26T08:12:17.939Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T08:12:17.941Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T08:12:17.941Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8380
+
+[debug] [2024-03-26T08:12:18.220Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T08:12:20.385Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T08:12:21.387Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T08:12:21.758Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T08:12:21.758Z] Building nodejs source
+[debug] [2024-03-26T08:12:21.758Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T08:12:21.759Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T08:12:21.759Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8112
+
+[debug] [2024-03-26T08:12:22.021Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T08:12:39.833Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T08:12:40.835Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T08:12:41.185Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T08:12:41.186Z] Building nodejs source
+[debug] [2024-03-26T08:12:41.186Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T08:12:41.186Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T08:12:41.187Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8000
+
+[debug] [2024-03-26T08:12:41.432Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T08:12:46.088Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T08:12:47.088Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T08:12:47.503Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T08:12:47.504Z] Building nodejs source
+[debug] [2024-03-26T08:12:47.504Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T08:12:47.504Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T08:12:47.505Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8462
+
+[debug] [2024-03-26T08:12:47.749Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
