@@ -26,60 +26,12 @@ exports.createOrder = async (email, data) => {
   });
 };
 
-// exports.getOrders = async (
-//   userId,
-//   startDate,
-//   endDate,
-//   activeStatus,
-//   completedStatus,
-//   res
-// ) => {
-//   const firestore = admin.firestore();
-
-//   const startTimestamp = Timestamp.fromDate(startDate);
-//   const endTimestamp = Timestamp.fromDate(endDate);
-
-//   const ordersSnapshot = await firestore
-//     .collection(orderCollection)
-//     .where("email", "==", userId)
-//     .where("date", ">=", startTimestamp)
-//     .where("date", "<=", endTimestamp)
-//     .get();
-
-//   const orders = {
-//     activeOrders: [],
-//     completedOrders: [],
-//   };
-
-//   ordersSnapshot.forEach((doc) => {
-//     const order = doc.data();
-//     // Active Orders
-//     if (activeStatus === "all") {
-//       if (order.status === "pending" || order.status === "shipped") {
-//         orders.activeOrders.push(order);
-//       }
-//     } else if (order.status === activeStatus) {
-//       orders.activeOrders.push(order);
-//     }
-//     //Completed Orders
-//     if (completedStatus === "all") {
-//       if (order.status === "awaiting" || order.status === "paid") {
-//         orders.completedOrders.push(order);
-//       }
-//     } else if (order.status === completedStatus) {
-//       orders.completedOrders.push(order);
-//     }
-//   });
-//   res.status(200).json(orders);
-// };
-
 
 exports.getOrders = async (
   userId,
   startDate,
   endDate,
-  activeStatus,
-  completedStatus,
+  status,
   res
 ) => {
   const firestore = admin.firestore();
@@ -93,6 +45,18 @@ exports.getOrders = async (
     .where("date", ">=", startTimestamp)
     .where("date", "<=", endTimestamp)
 
+  // Parsing the statusParam to extract active and completed statuses
+  const statusPairs = status.split(',');
+  const statuses = {};
+  statusPairs.forEach(pair => {
+    const [key, value] = pair.split('-');
+    if (key && value) {
+      statuses[key] = value;
+    }
+  });
+
+  console.log(statuses["active"],"statuses")
+
   let SecOrderQuery = ordersQuery
 
   const orders = {
@@ -100,16 +64,16 @@ exports.getOrders = async (
     completedOrders: [],
   };
 
-  if(activeStatus === "all"){
+  if(statuses['active'] === "all"){
     ordersQuery = await ordersQuery.where("status","in",["pending","shipped"]).get()
   }else{
-    ordersQuery = await ordersQuery.where("status","==",activeStatus).get()
+    ordersQuery = await ordersQuery.where("status","==",statuses['active']).get()
   }
   
-  if(completedStatus === "all"){
+  if(statuses['completed'] === "all"){
     SecOrderQuery =await SecOrderQuery.where("status","in",["paid","awaiting"]).get()
   }else{
-    SecOrderQuery =await SecOrderQuery.where("status","==",completedStatus).get()
+    SecOrderQuery =await SecOrderQuery.where("status","==",statuses['completed']).get()
   }
 
   ordersQuery.forEach((doc)=>{

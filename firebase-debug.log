@@ -1,0 +1,921 @@
+[debug] [2024-03-26T05:43:13.541Z] ----------------------------------------------------------------------
+[debug] [2024-03-26T05:43:13.543Z] Command:       /home/bacancy/.nvm/versions/node/v20.10.0/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2024-03-26T05:43:13.544Z] CLI Version:   13.4.0
+[debug] [2024-03-26T05:43:13.544Z] Platform:      linux
+[debug] [2024-03-26T05:43:13.544Z] Node Version:  v20.10.0
+[debug] [2024-03-26T05:43:13.544Z] Time:          Tue Mar 26 2024 11:13:13 GMT+0530 (India Standard Time)
+[debug] [2024-03-26T05:43:13.544Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-26T05:43:13.547Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-03-26T05:43:13.637Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-26T05:43:13.637Z] > authorizing via signed-in user (loveysunshine01@gmail.com)
+[debug] [2024-03-26T05:43:13.726Z] openjdk version "11.0.22" 2024-01-16
+[debug] [2024-03-26T05:43:13.727Z] 
+OpenJDK Runtime Environment (build 11.0.22+7-post-Ubuntu-0ubuntu220.04.1)
+OpenJDK 64-Bit Server VM (build 11.0.22+7-post-Ubuntu-0ubuntu220.04.1, mixed mode, sharing)
+
+[debug] [2024-03-26T05:43:13.731Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: auth, functions, firestore, hosting, pubsub {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, hosting, pubsub"}}
+[debug] [2024-03-26T05:43:13.736Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-26T05:43:13.737Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-26T05:43:13.737Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-26T05:43:13.737Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-26T05:43:13.737Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-26T05:43:13.737Z] [pubsub] Pub/Sub Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-26T05:43:13.737Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8081}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-03-26T05:43:13.743Z] [hub] writing locator at /tmp/hub-wound-firebase.json
+[debug] [2024-03-26T05:43:13.748Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-26T05:43:13.749Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-26T05:43:13.749Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"pubsub":[{"address":"127.0.0.1","family":"IPv4","port":8081}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, storage\u001b[22m"}}
+[debug] [2024-03-26T05:43:13.752Z] defaultcredentials: writing to file /home/bacancy/.config/firebase/loveysunshine01_gmail_com_application_default_credentials.json
+[debug] [2024-03-26T05:43:13.754Z] Setting GAC to /home/bacancy/.config/firebase/loveysunshine01_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/bacancy/.config/firebase/loveysunshine01_gmail_com_application_default_credentials.json"}}
+[debug] [2024-03-26T05:43:13.755Z] > refreshing access token with scopes: []
+[debug] [2024-03-26T05:43:13.756Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-26T05:43:13.756Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-26T05:43:13.949Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-03-26T05:43:13.949Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-26T05:43:13.957Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wound-firebase/adminSdkConfig [none]
+[debug] [2024-03-26T05:43:14.251Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-03-26T05:43:14.251Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-03-26T05:43:14.454Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wound-firebase/adminSdkConfig 200
+[debug] [2024-03-26T05:43:14.454Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wound-firebase/adminSdkConfig {"projectId":"wound-firebase","storageBucket":"wound-firebase.appspot.com"}
+[warn] ⚠  firestore: Cloud Firestore Emulator does not support multiple databases yet. {"metadata":{"emulator":{"name":"firestore"},"message":"Cloud Firestore Emulator does not support multiple databases yet."}}
+[warn] ⚠  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
+[warn] ⚠  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2024-03-26T05:43:14.467Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-03-26T05:43:14.467Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-03-26T05:43:14.467Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/bacancy/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.1.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","wound-firebase","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/bacancy/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.1.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"wound-firebase\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2024-03-26T05:43:15.793Z] Mar 26, 2024 11:13:15 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 26, 2024 11:13:15 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2024-03-26T05:43:15.818Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2024-03-26T05:43:15.819Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2024-03-26T05:43:21.295Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2024-03-26T05:43:21.295Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-03-26T05:43:21.295Z] Starting Pub/Sub Emulator with command {"binary":"/home/bacancy/.cache/firebase/emulators/pubsub-emulator-0.7.1/pubsub-emulator/bin/cloud-pubsub-emulator","args":["--host=127.0.0.1","--port=8081"],"optionalArgs":["port","host"],"joinArgs":true} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"/home/bacancy/.cache/firebase/emulators/pubsub-emulator-0.7.1/pubsub-emulator/bin/cloud-pubsub-emulator\",\"args\":[\"--host=127.0.0.1\",\"--port=8081\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true}"}}
+[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
+[debug] [2024-03-26T05:43:21.424Z] This is the Google Pub/Sub fake. {"metadata":{"emulator":{"name":"pubsub"},"message":"This is the Google Pub/Sub fake."}}
+[debug] [2024-03-26T05:43:21.425Z] 
+Implementation may be incomplete or differ from the real system.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"\nImplementation may be incomplete or differ from the real system.\n"}}
+[debug] [2024-03-26T05:43:21.467Z] Mar 26, 2024 11:13:21 AM com.google.cloud.pubsub.testing.v1.Main main
+INFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Mar 26, 2024 11:13:21 AM com.google.cloud.pubsub.testing.v1.Main main\nINFO: IAM integration is disabled. IAM policy methods and ACL checks are not supported\n"}}
+[debug] [2024-03-26T05:43:21.627Z] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation {"metadata":{"emulator":{"name":"pubsub"},"message":"SLF4J: Failed to load class \"org.slf4j.impl.StaticLoggerBinder\".\nSLF4J: Defaulting to no-operation (NOP) logger implementation"}}
+[debug] [2024-03-26T05:43:21.628Z] 
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"\nSLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.\n"}}
+[debug] [2024-03-26T05:43:22.089Z] Mar 26, 2024 11:13:22 AM com.google.cloud.pubsub.testing.v1.Main main
+INFO: Server started, listening on 8081
+ {"metadata":{"emulator":{"name":"pubsub"},"message":"Mar 26, 2024 11:13:22 AM com.google.cloud.pubsub.testing.v1.Main main\nINFO: Server started, listening on 8081\n"}}
+[debug] [2024-03-26T05:43:22.305Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/wound-firebase/sites 
+[debug] [2024-03-26T05:43:23.864Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/wound-firebase/sites 200
+[debug] [2024-03-26T05:43:23.865Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/wound-firebase/sites {"sites":[{"name":"projects/wound-firebase/sites/wound-firebase","defaultUrl":"https://wound-firebase.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-26T05:43:23.865Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wound-firebase/webApps/-/config [none]
+[debug] [2024-03-26T05:43:25.422Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wound-firebase/webApps/-/config 200
+[debug] [2024-03-26T05:43:25.423Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wound-firebase/webApps/-/config {"projectId":"wound-firebase","storageBucket":"wound-firebase.appspot.com","apiKey":"AIzaSyBNTlrzXdKv5iLUBRorioJ1ymXQnFPVjoU","authDomain":"wound-firebase.firebaseapp.com","messagingSenderId":"951978419975"}
+[debug] [2024-03-26T05:43:25.452Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wound-firebase [none]
+[debug] [2024-03-26T05:43:25.901Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wound-firebase 200
+[debug] [2024-03-26T05:43:25.901Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wound-firebase {"projectId":"wound-firebase","projectNumber":"951978419975","displayName":"wound-firebase","name":"projects/wound-firebase","resources":{"hostingSite":"wound-firebase"},"state":"ACTIVE","etag":"1_84b1675d-2a3c-4370-97e4-fe64cf09d113"}
+[debug] [2024-03-26T05:43:25.902Z] Specified "public" directory "public" does not exist; Deploy to Hosting site "wound-firebase" may fail or be empty.
+[info] i  hosting[wound-firebase]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[wound-firebase]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-03-26T05:43:25.918Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-03-26T05:43:25.919Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-03-26T05:43:25.919Z] Starting Emulator UI with command {"binary":"node","args":["/home/bacancy/.cache/firebase/emulators/ui-v1.11.7/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/bacancy/.cache/firebase/emulators/ui-v1.11.7/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-03-26T05:43:26.019Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-03-26T05:43:26.019Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/home/bacancy/Documents/woundProject/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/bacancy/Documents/woundProject/functions\" for Cloud Functions..."}}
+[debug] [2024-03-26T05:43:26.179Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T05:43:26.613Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T05:43:26.613Z] Building nodejs source
+[debug] [2024-03-26T05:43:26.614Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:43:26.618Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T05:43:26.621Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8614
+
+[debug] [2024-03-26T05:43:27.085Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[info] ✔  functions[us-central1-wound]: http function initialized (http://127.0.0.1:5001/wound-firebase/us-central1/wound). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/wound-firebase/us-central1/wound)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ 127.0.0.1:5000 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Pub/Sub        │ 127.0.0.1:8081 │ n/a                             │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-03-26T05:46:55.286Z] Mar 26, 2024 11:16:55 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 26, 2024 11:16:55 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2024-03-26T05:46:59.103Z] Mar 26, 2024 11:16:59 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 26, 2024 11:16:59 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2024-03-26T05:46:59.266Z] Mar 26, 2024 11:16:59 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 26, 2024 11:16:59 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2024-03-26T05:48:11.967Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/register-2024-03-26T05:48:11.966Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:48:11.967Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/register-2024-03-26T05:48:11.966Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:48:11.968Z] Accepted request POST /wound-firebase/us-central1/wound/register --> us-central1-wound
+[debug] [2024-03-26T05:48:11.971Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:48:11.972Z] [functions] Got req.url=/wound-firebase/us-central1/wound/register, mapping to path=/register {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/register, mapping to path=/register"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:48:11.978Z] [worker-pool] addWorker(us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-wound)"}}
+[debug] [2024-03-26T05:48:11.979Z] [worker-pool] Adding worker with key us-central1-wound, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-wound, total=1"}}
+[debug] [2024-03-26T05:48:12.483Z] [runtime-status] [11687] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-26T05:48:12.483Z] [runtime-status] [11687] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:48:12.483Z] [runtime-status] [11687] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-03-26T05:48:12.483Z] [runtime-status] [11687] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:48:12.593Z] [runtime-status] [11687] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-03-26T05:48:12.593Z] [runtime-status] [11687] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2024-03-26T05:48:12.593Z] [runtime-status] [11687] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:48:12.594Z] [runtime-status] [11687] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-26T05:48:12.595Z] [runtime-status] [11687] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:48:12.595Z] [runtime-status] [11687] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-03-26T05:48:12.695Z] [runtime-status] [11687] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"wound-firebase","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+3vYM9i3iDTLo\nFyig9RIwevbpi0Ce4uTXCReJRoKpBrBoi1bINpmFlI4U4RhkTW23TTGkpWB6TCWj\n/73wYxiIHB82ECr4Jt0aWIIRg0VVMfEXUJ8ELSnvektvEvShOewreF0SquumAIW0\nLHJa10UcKJaLGscTYZ9HinV7+HEOVpfdJVtYFOlGW+NutjCgBgYlxAAVPInM3Rme\noQwDpIIlzbr7MuTMgMAITD3fjNTVOnFpowYURNJJrFDix5gM2JhfyFZZeSe+DQVz\nyPoz65afkXCYRZ6UpJIovKk0TNihGoIURCjbxIpmTvwjH/sghmsR6knr8QVF+19y\ncTVVArZFAgMBAAECggEAGjM4yyavvavaJQmoxg9d49G9OummgSjcCLhyxqErJlCI\nvpEB5JG6GR//MNaFJp+KQ/MQsW0SBTeWoyBjzi+MGoLhteYaP93107v6frTqO3uT\ngIPMkCIy83ByElkjw03UIVNwUzOrDSpdMBI50EZkci0QHSAb24k29/cFkXLU8gar\nz1Ko82T48W18gjUNU2XKBneGVD3mELO2UbYJK9D7P0W7S7qMFRnXiQ3ISOXvm9mI\nl2Jsm3gHImzU2dIaS9uP4MffN+Hw9xirhF2V614JMNcdRZocTgtaSD5ZXXFs/ejB\noaHMz95SMxSPnLBfn/F0B6AFv/OORtPIXckv8R7EsQKBgQD4jbKxWeQzvr6vsFBe\nDyWiYSFFlzy/auApbmfwjMS7PCZFfzzoP5u/ez6vAn2tdQ1wwgPGNOPwTxFpYBtF\nLsa9g8brfm4KdDN9XoxVyHngxbewPQlllInnKkeg/r1eEiS2dAsQsDW4JGrhG9i1\n976ydF7rGTvlfJyJDlX04yujawKBgQDEltyhZbgnvsBvDpoyZYh5Rj33vQ25zbug\n7F8LP34Ga/WzIzxzn/aDfCs6qwZ9CaI7tKBjVUlcKSlwJJEdij07JgBHdkW2PojA\nvXGfCutDXyKKm+hG4hAvurYYmz5dGIdlHMR28RMlFaWmqQdnTH3Y6XdpS8ijpVeT\nTS7H8tgpDwKBgA2UyIfSTprZOFgnPSz2jOrjfcrsqaAX+empo7pMJs/ISJsRicVy\n/FKpLFKpwy5AMBzSLRyedToDSANHAhZ0qN1gHvVtMhwWH14hVW+2hZpXk2Lo4uOP\nCz37XHCamsRSH3lsu9IMntLSApkMSXof8GaV3z3fYht3BKKkiuPXqeHDAoGAffus\nMqZsSNQ+oC08dhWJSybPqYb3V95XYr53/k5XJihjkcSABh06LnMRhQx7IQBefmK3\n8lCCrdQXIS3d7Y9cxB4LScCq1irnGpWNTf4CXO+HxEo7pclT1DKUZdp/Mcv5YLv5\nz7uYqEhiGxbxjqp/b9XWV51gXDcmk1iAJVUkX9MCgYEA5UhzVd1FhbK5vfhP5mtj\n3GBoEejBtRjaLYCGqcZQcKjCUv4EDdzX7LPEODe0FX8BPIYp0eiAT1oWfenNJMTI\nc5PR4e/h4B0v6Ya/I/IbD2BYxaru5olc5i1Tfzarp1mp3lUKfFqunpN3V3AINUY/\nLpMGmti9PN1qBm4wIQUwYjk=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-dgmii@wound-firebase.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}},"databaseURL":"https://wound-firebase.firebaseio.com"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"wound-firebase\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+3vYM9i3iDTLo\\nFyig9RIwevbpi0Ce4uTXCReJRoKpBrBoi1bINpmFlI4U4RhkTW23TTGkpWB6TCWj\\n/73wYxiIHB82ECr4Jt0aWIIRg0VVMfEXUJ8ELSnvektvEvShOewreF0SquumAIW0\\nLHJa10UcKJaLGscTYZ9HinV7+HEOVpfdJVtYFOlGW+NutjCgBgYlxAAVPInM3Rme\\noQwDpIIlzbr7MuTMgMAITD3fjNTVOnFpowYURNJJrFDix5gM2JhfyFZZeSe+DQVz\\nyPoz65afkXCYRZ6UpJIovKk0TNihGoIURCjbxIpmTvwjH/sghmsR6knr8QVF+19y\\ncTVVArZFAgMBAAECggEAGjM4yyavvavaJQmoxg9d49G9OummgSjcCLhyxqErJlCI\\nvpEB5JG6GR//MNaFJp+KQ/MQsW0SBTeWoyBjzi+MGoLhteYaP93107v6frTqO3uT\\ngIPMkCIy83ByElkjw03UIVNwUzOrDSpdMBI50EZkci0QHSAb24k29/cFkXLU8gar\\nz1Ko82T48W18gjUNU2XKBneGVD3mELO2UbYJK9D7P0W7S7qMFRnXiQ3ISOXvm9mI\\nl2Jsm3gHImzU2dIaS9uP4MffN+Hw9xirhF2V614JMNcdRZocTgtaSD5ZXXFs/ejB\\noaHMz95SMxSPnLBfn/F0B6AFv/OORtPIXckv8R7EsQKBgQD4jbKxWeQzvr6vsFBe\\nDyWiYSFFlzy/auApbmfwjMS7PCZFfzzoP5u/ez6vAn2tdQ1wwgPGNOPwTxFpYBtF\\nLsa9g8brfm4KdDN9XoxVyHngxbewPQlllInnKkeg/r1eEiS2dAsQsDW4JGrhG9i1\\n976ydF7rGTvlfJyJDlX04yujawKBgQDEltyhZbgnvsBvDpoyZYh5Rj33vQ25zbug\\n7F8LP34Ga/WzIzxzn/aDfCs6qwZ9CaI7tKBjVUlcKSlwJJEdij07JgBHdkW2PojA\\nvXGfCutDXyKKm+hG4hAvurYYmz5dGIdlHMR28RMlFaWmqQdnTH3Y6XdpS8ijpVeT\\nTS7H8tgpDwKBgA2UyIfSTprZOFgnPSz2jOrjfcrsqaAX+empo7pMJs/ISJsRicVy\\n/FKpLFKpwy5AMBzSLRyedToDSANHAhZ0qN1gHvVtMhwWH14hVW+2hZpXk2Lo4uOP\\nCz37XHCamsRSH3lsu9IMntLSApkMSXof8GaV3z3fYht3BKKkiuPXqeHDAoGAffus\\nMqZsSNQ+oC08dhWJSybPqYb3V95XYr53/k5XJihjkcSABh06LnMRhQx7IQBefmK3\\n8lCCrdQXIS3d7Y9cxB4LScCq1irnGpWNTf4CXO+HxEo7pclT1DKUZdp/Mcv5YLv5\\nz7uYqEhiGxbxjqp/b9XWV51gXDcmk1iAJVUkX9MCgYEA5UhzVd1FhbK5vfhP5mtj\\n3GBoEejBtRjaLYCGqcZQcKjCUv4EDdzX7LPEODe0FX8BPIYp0eiAT1oWfenNJMTI\\nc5PR4e/h4B0v6Ya/I/IbD2BYxaru5olc5i1Tfzarp1mp3lUKfFqunpN3V3AINUY/\\nLpMGmti9PN1qBm4wIQUwYjk=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-dgmii@wound-firebase.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}},\"databaseURL\":\"https://wound-firebase.firebaseio.com\"}"}}
+[debug] [2024-03-26T05:48:12.700Z] [runtime-status] [11687] Functions runtime initialized. {"cwd":"/home/bacancy/Documents/woundProject/functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] Functions runtime initialized. {\"cwd\":\"/home/bacancy/Documents/woundProject/functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2024-03-26T05:48:12.700Z] [runtime-status] [11687] Listening to port: /tmp/fire_emu_95019022ce3cfcb5.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [11687] Listening to port: /tmp/fire_emu_95019022ce3cfcb5.sock"}}
+[debug] [2024-03-26T05:48:12.793Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:48:12.794Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:48:12.795Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[debug] [2024-03-26T05:48:13.061Z] Mar 26, 2024 11:18:13 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 26, 2024 11:18:13 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2024-03-26T05:48:13.272Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 476.824234ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 476.824234ms"}}
+[debug] [2024-03-26T05:48:13.273Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:48:13.273Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:48:13.273Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:48:13.273Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:48:15.777Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/login-2024-03-26T05:48:15.777Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:48:15.777Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/login-2024-03-26T05:48:15.777Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:48:15.777Z] Accepted request POST /wound-firebase/us-central1/wound/login --> us-central1-wound
+[debug] [2024-03-26T05:48:15.778Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:48:15.778Z] [functions] Got req.url=/wound-firebase/us-central1/wound/login, mapping to path=/login {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/login, mapping to path=/login"}}
+[debug] [2024-03-26T05:48:15.779Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:48:15.779Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[debug] [2024-03-26T05:48:15.862Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 83.726292ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 83.726292ms"}}
+[debug] [2024-03-26T05:48:15.863Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:48:15.863Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:48:15.863Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:48:15.863Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:48:53.559Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:48:53.559Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:48:53.559Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:48:53.559Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:48:53.559Z] Accepted request POST /wound-firebase/us-central1/wound/order --> us-central1-wound
+[debug] [2024-03-26T05:48:53.562Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:48:53.562Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order"}}
+[debug] [2024-03-26T05:48:53.562Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:48:53.563Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2024-03-26T05:48:53.674Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 111.726347ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 111.726347ms"}}
+[debug] [2024-03-26T05:48:53.674Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:48:53.675Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:48:53.675Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:48:53.675Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:49:08.165Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:49:08.165Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:49:08.165Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:49:08.165Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:49:08.165Z] Accepted request POST /wound-firebase/us-central1/wound/order --> us-central1-wound
+[debug] [2024-03-26T05:49:08.168Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:49:08.168Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order"}}
+[debug] [2024-03-26T05:49:08.168Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:49:08.168Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2024-03-26T05:49:08.203Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 34.468332ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 34.468332ms"}}
+[debug] [2024-03-26T05:49:08.203Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:49:08.203Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:49:08.203Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:49:08.203Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:49:22.383Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:49:22.383Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:49:22.384Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:49:22.383Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:49:22.384Z] Accepted request POST /wound-firebase/us-central1/wound/order --> us-central1-wound
+[debug] [2024-03-26T05:49:22.386Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:49:22.386Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order"}}
+[debug] [2024-03-26T05:49:22.386Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:49:22.386Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2024-03-26T05:49:22.413Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 27.072838ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 27.072838ms"}}
+[debug] [2024-03-26T05:49:22.414Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:49:22.414Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:49:22.414Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:49:22.414Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:49:36.618Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:49:36.618Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:49:36.618Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:49:36.618Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:49:36.619Z] Accepted request POST /wound-firebase/us-central1/wound/order --> us-central1-wound
+[debug] [2024-03-26T05:49:36.621Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:49:36.621Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order"}}
+[debug] [2024-03-26T05:49:36.621Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:49:36.622Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2024-03-26T05:49:36.648Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 26.642243ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 26.642243ms"}}
+[debug] [2024-03-26T05:49:36.649Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:49:36.649Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:49:36.649Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:49:36.649Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:49:52.698Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:49:52.698Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:49:52.698Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:49:52.698Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:49:52.698Z] Accepted request POST /wound-firebase/us-central1/wound/order --> us-central1-wound
+[debug] [2024-03-26T05:49:52.700Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:49:52.700Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order"}}
+[debug] [2024-03-26T05:49:52.701Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:49:52.701Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2024-03-26T05:49:52.723Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 22.262799ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 22.262799ms"}}
+[debug] [2024-03-26T05:49:52.724Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:49:52.724Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:49:52.724Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:49:52.724Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:50:06.253Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:50:06.253Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:50:06.254Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:50:06.253Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:50:06.254Z] Accepted request POST /wound-firebase/us-central1/wound/order --> us-central1-wound
+[debug] [2024-03-26T05:50:06.255Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:50:06.255Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order"}}
+[debug] [2024-03-26T05:50:06.255Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:50:06.256Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2024-03-26T05:50:06.279Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 23.282384ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 23.282384ms"}}
+[debug] [2024-03-26T05:50:06.279Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:50:06.279Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:50:06.279Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:50:06.279Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:50:23.750Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:50:23.750Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:50:23.750Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:50:23.750Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:50:23.750Z] Accepted request POST /wound-firebase/us-central1/wound/order --> us-central1-wound
+[debug] [2024-03-26T05:50:23.752Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:50:23.752Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order"}}
+[debug] [2024-03-26T05:50:23.752Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:50:23.753Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2024-03-26T05:50:23.773Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 20.478768ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 20.478768ms"}}
+[debug] [2024-03-26T05:50:23.773Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:50:23.773Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:50:23.774Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:50:23.774Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:50:43.412Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:50:43.412Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:50:43.412Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:50:43.412Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:50:43.412Z] Accepted request POST /wound-firebase/us-central1/wound/order --> us-central1-wound
+[debug] [2024-03-26T05:50:43.415Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:50:43.415Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order, mapping to path=/order"}}
+[debug] [2024-03-26T05:50:43.415Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:50:43.415Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[info] >  undefined {"user":"undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m undefined"}}
+[debug] [2024-03-26T05:50:43.440Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 24.569693ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 24.569693ms"}}
+[debug] [2024-03-26T05:50:43.440Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:50:43.440Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:50:43.440Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:50:43.440Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:51:17.527Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:51:17.527Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:51:17.527Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:51:17.527Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:51:17.527Z] Accepted request GET /wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid --> us-central1-wound
+[debug] [2024-03-26T05:51:17.529Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:51:17.529Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid, mapping to path=/order?days=90&status=active-all,completed-paid {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid, mapping to path=/order?days=90&status=active-all,completed-paid"}}
+[debug] [2024-03-26T05:51:17.529Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:51:17.530Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[info] >  TokenExpiredError: jwt expired {"user":"TokenExpiredError: jwt expired","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m TokenExpiredError: jwt expired"}}
+[info] >      at /home/bacancy/Documents/woundProject/functions/node_modules/jsonwebtoken/verify.js:190:21 {"user":"    at /home/bacancy/Documents/woundProject/functions/node_modules/jsonwebtoken/verify.js:190:21","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /home/bacancy/Documents/woundProject/functions/node_modules/jsonwebtoken/verify.js:190:21"}}
+[info] >      at getSecret (/home/bacancy/Documents/woundProject/functions/node_modules/jsonwebtoken/verify.js:97:14) {"user":"    at getSecret (/home/bacancy/Documents/woundProject/functions/node_modules/jsonwebtoken/verify.js:97:14)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at getSecret (/home/bacancy/Documents/woundProject/functions/node_modules/jsonwebtoken/verify.js:97:14)"}}
+[info] >      at module.exports [as verify] (/home/bacancy/Documents/woundProject/functions/node_modules/jsonwebtoken/verify.js:101:10) {"user":"    at module.exports [as verify] (/home/bacancy/Documents/woundProject/functions/node_modules/jsonwebtoken/verify.js:101:10)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at module.exports [as verify] (/home/bacancy/Documents/woundProject/functions/node_modules/jsonwebtoken/verify.js:101:10)"}}
+[info] >      at exports.requireSignIn (/home/bacancy/Documents/woundProject/functions/middleware/authMiddleware.js:7:32) {"user":"    at exports.requireSignIn (/home/bacancy/Documents/woundProject/functions/middleware/authMiddleware.js:7:32)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at exports.requireSignIn (/home/bacancy/Documents/woundProject/functions/middleware/authMiddleware.js:7:32)"}}
+[info] >      at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[info] >      at next (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:149:13) {"user":"    at next (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:149:13)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:149:13)"}}
+[info] >      at Route.dispatch (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:119:3) {"user":"    at Route.dispatch (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:119:3)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Route.dispatch (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/route.js:119:3)"}}
+[info] >      at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/layer.js:95:5)"}}
+[info] >      at /home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/index.js:284:15 {"user":"    at /home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/index.js:284:15","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/index.js:284:15"}}
+[info] >      at Function.process_params (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/index.js:346:12) { {"user":"    at Function.process_params (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/index.js:346:12) {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Function.process_params (/home/bacancy/Documents/woundProject/functions/node_modules/express/lib/router/index.js:346:12) {"}}
+[info] >    expiredAt: 2024-03-22T16:17:59.000Z {"user":"  expiredAt: 2024-03-22T16:17:59.000Z","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m   expiredAt: 2024-03-22T16:17:59.000Z"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2024-03-26T05:51:17.538Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 8.612804ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 8.612804ms"}}
+[debug] [2024-03-26T05:51:17.538Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:51:17.539Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:51:17.539Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:51:17.539Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:51:26.563Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:51:26.563Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:51:26.563Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:51:26.563Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:51:26.563Z] Accepted request GET /wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid --> us-central1-wound
+[debug] [2024-03-26T05:51:26.566Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:51:26.566Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid, mapping to path=/order?days=90&status=active-all,completed-paid {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid, mapping to path=/order?days=90&status=active-all,completed-paid"}}
+[debug] [2024-03-26T05:51:26.566Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:51:26.566Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: BUSY"}}
+[info] >  priyaintwala5@gmail.com {"user":"priyaintwala5@gmail.com","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m priyaintwala5@gmail.com"}}
+[info] >  { active: [ 'all' ], completed: [ 'paid' ] } statuses {"user":"{ active: [ 'all' ], completed: [ 'paid' ] } statuses","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m { active: [ 'all' ], completed: [ 'paid' ] } statuses"}}
+[debug] [2024-03-26T05:51:26.625Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 58.797625ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 58.797625ms"}}
+[debug] [2024-03-26T05:51:26.626Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: IDLE"}}
+[debug] [2024-03-26T05:51:26.626Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:51:26.626Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:51:26.626Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:52:07.694Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T05:52:08.696Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T05:52:09.131Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T05:52:09.131Z] Building nodejs source
+[debug] [2024-03-26T05:52:09.132Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:52:09.133Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T05:52:09.134Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[debug] [2024-03-26T05:52:09.138Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[info] Serving at port 8943
+
+[debug] [2024-03-26T05:52:09.401Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T05:52:10.138Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T05:52:10.497Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T05:52:10.497Z] Building nodejs source
+[debug] [2024-03-26T05:52:10.497Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:52:10.498Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T05:52:10.499Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8457
+
+[debug] [2024-03-26T05:52:10.734Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T05:52:12.732Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T05:52:13.732Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T05:52:14.104Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T05:52:14.104Z] Building nodejs source
+[debug] [2024-03-26T05:52:14.104Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:52:14.105Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T05:52:14.106Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8865
+
+[debug] [2024-03-26T05:52:14.283Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T05:52:14.390Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T05:52:14.411Z] [worker-pool] Shutting down IDLE worker (us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-wound)"}}
+[debug] [2024-03-26T05:52:14.411Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: FINISHING"}}
+[debug] [2024-03-26T05:52:14.416Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: exited"}}
+[debug] [2024-03-26T05:52:14.416Z] [worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-03f61334-769d-4a83-b6dd-a90e50937ae7]: FINISHED"}}
+[debug] [2024-03-26T05:52:15.284Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T05:52:15.705Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T05:52:15.705Z] Building nodejs source
+[debug] [2024-03-26T05:52:15.705Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:52:15.709Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T05:52:15.710Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[info] Serving at port 8180
+
+[debug] [2024-03-26T05:52:16.008Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T05:52:16.842Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T05:52:17.843Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T05:52:19.320Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T05:52:19.320Z] Building nodejs source
+[debug] [2024-03-26T05:52:19.320Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:52:19.321Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T05:52:19.322Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[info] Serving at port 8674
+
+[debug] [2024-03-26T05:52:19.605Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T05:52:20.290Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:52:20.290Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:52:20.291Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:52:20.290Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:52:20.291Z] Accepted request GET /wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid --> us-central1-wound
+[debug] [2024-03-26T05:52:20.293Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:52:20.293Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid, mapping to path=/order?days=90&status=active-all,completed-paid {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid, mapping to path=/order?days=90&status=active-all,completed-paid"}}
+[debug] [2024-03-26T05:52:20.293Z] [worker-pool] Cleaned up workers for us-central1-wound: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-wound: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:52:20.296Z] [worker-pool] addWorker(us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-wound)"}}
+[debug] [2024-03-26T05:52:20.296Z] [worker-pool] Adding worker with key us-central1-wound, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-wound, total=1"}}
+[debug] [2024-03-26T05:52:20.754Z] [runtime-status] [12820] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-26T05:52:20.755Z] [runtime-status] [12820] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:52:20.755Z] [runtime-status] [12820] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-03-26T05:52:20.755Z] [runtime-status] [12820] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:52:20.849Z] [runtime-status] [12820] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-03-26T05:52:20.849Z] [runtime-status] [12820] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2024-03-26T05:52:20.849Z] [runtime-status] [12820] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:52:20.850Z] [runtime-status] [12820] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-26T05:52:20.851Z] [runtime-status] [12820] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:52:20.851Z] [runtime-status] [12820] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-03-26T05:52:20.953Z] [runtime-status] [12820] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"wound-firebase","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+3vYM9i3iDTLo\nFyig9RIwevbpi0Ce4uTXCReJRoKpBrBoi1bINpmFlI4U4RhkTW23TTGkpWB6TCWj\n/73wYxiIHB82ECr4Jt0aWIIRg0VVMfEXUJ8ELSnvektvEvShOewreF0SquumAIW0\nLHJa10UcKJaLGscTYZ9HinV7+HEOVpfdJVtYFOlGW+NutjCgBgYlxAAVPInM3Rme\noQwDpIIlzbr7MuTMgMAITD3fjNTVOnFpowYURNJJrFDix5gM2JhfyFZZeSe+DQVz\nyPoz65afkXCYRZ6UpJIovKk0TNihGoIURCjbxIpmTvwjH/sghmsR6knr8QVF+19y\ncTVVArZFAgMBAAECggEAGjM4yyavvavaJQmoxg9d49G9OummgSjcCLhyxqErJlCI\nvpEB5JG6GR//MNaFJp+KQ/MQsW0SBTeWoyBjzi+MGoLhteYaP93107v6frTqO3uT\ngIPMkCIy83ByElkjw03UIVNwUzOrDSpdMBI50EZkci0QHSAb24k29/cFkXLU8gar\nz1Ko82T48W18gjUNU2XKBneGVD3mELO2UbYJK9D7P0W7S7qMFRnXiQ3ISOXvm9mI\nl2Jsm3gHImzU2dIaS9uP4MffN+Hw9xirhF2V614JMNcdRZocTgtaSD5ZXXFs/ejB\noaHMz95SMxSPnLBfn/F0B6AFv/OORtPIXckv8R7EsQKBgQD4jbKxWeQzvr6vsFBe\nDyWiYSFFlzy/auApbmfwjMS7PCZFfzzoP5u/ez6vAn2tdQ1wwgPGNOPwTxFpYBtF\nLsa9g8brfm4KdDN9XoxVyHngxbewPQlllInnKkeg/r1eEiS2dAsQsDW4JGrhG9i1\n976ydF7rGTvlfJyJDlX04yujawKBgQDEltyhZbgnvsBvDpoyZYh5Rj33vQ25zbug\n7F8LP34Ga/WzIzxzn/aDfCs6qwZ9CaI7tKBjVUlcKSlwJJEdij07JgBHdkW2PojA\nvXGfCutDXyKKm+hG4hAvurYYmz5dGIdlHMR28RMlFaWmqQdnTH3Y6XdpS8ijpVeT\nTS7H8tgpDwKBgA2UyIfSTprZOFgnPSz2jOrjfcrsqaAX+empo7pMJs/ISJsRicVy\n/FKpLFKpwy5AMBzSLRyedToDSANHAhZ0qN1gHvVtMhwWH14hVW+2hZpXk2Lo4uOP\nCz37XHCamsRSH3lsu9IMntLSApkMSXof8GaV3z3fYht3BKKkiuPXqeHDAoGAffus\nMqZsSNQ+oC08dhWJSybPqYb3V95XYr53/k5XJihjkcSABh06LnMRhQx7IQBefmK3\n8lCCrdQXIS3d7Y9cxB4LScCq1irnGpWNTf4CXO+HxEo7pclT1DKUZdp/Mcv5YLv5\nz7uYqEhiGxbxjqp/b9XWV51gXDcmk1iAJVUkX9MCgYEA5UhzVd1FhbK5vfhP5mtj\n3GBoEejBtRjaLYCGqcZQcKjCUv4EDdzX7LPEODe0FX8BPIYp0eiAT1oWfenNJMTI\nc5PR4e/h4B0v6Ya/I/IbD2BYxaru5olc5i1Tfzarp1mp3lUKfFqunpN3V3AINUY/\nLpMGmti9PN1qBm4wIQUwYjk=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-dgmii@wound-firebase.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}},"databaseURL":"https://wound-firebase.firebaseio.com"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"wound-firebase\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+3vYM9i3iDTLo\\nFyig9RIwevbpi0Ce4uTXCReJRoKpBrBoi1bINpmFlI4U4RhkTW23TTGkpWB6TCWj\\n/73wYxiIHB82ECr4Jt0aWIIRg0VVMfEXUJ8ELSnvektvEvShOewreF0SquumAIW0\\nLHJa10UcKJaLGscTYZ9HinV7+HEOVpfdJVtYFOlGW+NutjCgBgYlxAAVPInM3Rme\\noQwDpIIlzbr7MuTMgMAITD3fjNTVOnFpowYURNJJrFDix5gM2JhfyFZZeSe+DQVz\\nyPoz65afkXCYRZ6UpJIovKk0TNihGoIURCjbxIpmTvwjH/sghmsR6knr8QVF+19y\\ncTVVArZFAgMBAAECggEAGjM4yyavvavaJQmoxg9d49G9OummgSjcCLhyxqErJlCI\\nvpEB5JG6GR//MNaFJp+KQ/MQsW0SBTeWoyBjzi+MGoLhteYaP93107v6frTqO3uT\\ngIPMkCIy83ByElkjw03UIVNwUzOrDSpdMBI50EZkci0QHSAb24k29/cFkXLU8gar\\nz1Ko82T48W18gjUNU2XKBneGVD3mELO2UbYJK9D7P0W7S7qMFRnXiQ3ISOXvm9mI\\nl2Jsm3gHImzU2dIaS9uP4MffN+Hw9xirhF2V614JMNcdRZocTgtaSD5ZXXFs/ejB\\noaHMz95SMxSPnLBfn/F0B6AFv/OORtPIXckv8R7EsQKBgQD4jbKxWeQzvr6vsFBe\\nDyWiYSFFlzy/auApbmfwjMS7PCZFfzzoP5u/ez6vAn2tdQ1wwgPGNOPwTxFpYBtF\\nLsa9g8brfm4KdDN9XoxVyHngxbewPQlllInnKkeg/r1eEiS2dAsQsDW4JGrhG9i1\\n976ydF7rGTvlfJyJDlX04yujawKBgQDEltyhZbgnvsBvDpoyZYh5Rj33vQ25zbug\\n7F8LP34Ga/WzIzxzn/aDfCs6qwZ9CaI7tKBjVUlcKSlwJJEdij07JgBHdkW2PojA\\nvXGfCutDXyKKm+hG4hAvurYYmz5dGIdlHMR28RMlFaWmqQdnTH3Y6XdpS8ijpVeT\\nTS7H8tgpDwKBgA2UyIfSTprZOFgnPSz2jOrjfcrsqaAX+empo7pMJs/ISJsRicVy\\n/FKpLFKpwy5AMBzSLRyedToDSANHAhZ0qN1gHvVtMhwWH14hVW+2hZpXk2Lo4uOP\\nCz37XHCamsRSH3lsu9IMntLSApkMSXof8GaV3z3fYht3BKKkiuPXqeHDAoGAffus\\nMqZsSNQ+oC08dhWJSybPqYb3V95XYr53/k5XJihjkcSABh06LnMRhQx7IQBefmK3\\n8lCCrdQXIS3d7Y9cxB4LScCq1irnGpWNTf4CXO+HxEo7pclT1DKUZdp/Mcv5YLv5\\nz7uYqEhiGxbxjqp/b9XWV51gXDcmk1iAJVUkX9MCgYEA5UhzVd1FhbK5vfhP5mtj\\n3GBoEejBtRjaLYCGqcZQcKjCUv4EDdzX7LPEODe0FX8BPIYp0eiAT1oWfenNJMTI\\nc5PR4e/h4B0v6Ya/I/IbD2BYxaru5olc5i1Tfzarp1mp3lUKfFqunpN3V3AINUY/\\nLpMGmti9PN1qBm4wIQUwYjk=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-dgmii@wound-firebase.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}},\"databaseURL\":\"https://wound-firebase.firebaseio.com\"}"}}
+[debug] [2024-03-26T05:52:20.958Z] [runtime-status] [12820] Functions runtime initialized. {"cwd":"/home/bacancy/Documents/woundProject/functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] Functions runtime initialized. {\"cwd\":\"/home/bacancy/Documents/woundProject/functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2024-03-26T05:52:20.958Z] [runtime-status] [12820] Listening to port: /tmp/fire_emu_c973530ed09398c4.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [12820] Listening to port: /tmp/fire_emu_c973530ed09398c4.sock"}}
+[debug] [2024-03-26T05:52:21.008Z] [worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: IDLE"}}
+[debug] [2024-03-26T05:52:21.008Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:52:21.009Z] [worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: BUSY"}}
+[info] >  priyaintwala5@gmail.com {"user":"priyaintwala5@gmail.com","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m priyaintwala5@gmail.com"}}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T05:52:21.028Z] [worker-pool] Marking BUSY worker to finish (us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Marking BUSY worker to finish (us-central1-wound)"}}
+[debug] [2024-03-26T05:52:21.028Z] [worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: FINISHING"}}
+[info] >  [ 'all' ] statuses {"user":"[ 'all' ] statuses","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m [ 'all' ] statuses"}}
+[debug] [2024-03-26T05:52:21.196Z] Mar 26, 2024 11:22:21 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 26, 2024 11:22:21 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2024-03-26T05:52:21.223Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 214.977408ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 214.977408ms"}}
+[debug] [2024-03-26T05:52:21.224Z] [worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: IDLE --> FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: IDLE --> FINISHING"}}
+[debug] [2024-03-26T05:52:21.224Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:52:21.224Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:52:21.224Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:52:21.232Z] [worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: exited"}}
+[debug] [2024-03-26T05:52:21.233Z] [worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-cb227bc5-ed8a-44e8-a7ea-89bca3c442c5]: FINISHED"}}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T05:55:25.906Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T05:55:26.907Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T05:55:32.308Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T05:55:32.308Z] Building nodejs source
+[debug] [2024-03-26T05:55:32.308Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:55:32.310Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T05:55:32.311Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8626
+
+[debug] [2024-03-26T05:55:32.604Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T05:55:45.889Z] [work-queue] {"queuedWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:55:45.889Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:55:45.889Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/wound-firebase/us-central1/wound/order-2024-03-26T05:55:45.889Z"],"workRunningCount":1}
+[debug] [2024-03-26T05:55:45.889Z] Accepted request GET /wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid --> us-central1-wound
+[debug] [2024-03-26T05:55:45.892Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-03-26T05:55:45.892Z] [functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid, mapping to path=/order?days=90&status=active-all,completed-paid {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/wound-firebase/us-central1/wound/order?days=90&status=active-all,completed-paid, mapping to path=/order?days=90&status=active-all,completed-paid"}}
+[debug] [2024-03-26T05:55:45.892Z] [worker-pool] Cleaned up workers for us-central1-wound: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-wound: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:55:45.895Z] [worker-pool] addWorker(us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-wound)"}}
+[debug] [2024-03-26T05:55:45.895Z] [worker-pool] Adding worker with key us-central1-wound, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-wound, total=1"}}
+[debug] [2024-03-26T05:55:46.364Z] [runtime-status] [13178] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-26T05:55:46.365Z] [runtime-status] [13178] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:55:46.365Z] [runtime-status] [13178] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-03-26T05:55:46.365Z] [runtime-status] [13178] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:55:46.462Z] [runtime-status] [13178] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-03-26T05:55:46.462Z] [runtime-status] [13178] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2024-03-26T05:55:46.463Z] [runtime-status] [13178] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:55:46.463Z] [runtime-status] [13178] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2024-03-26T05:55:46.464Z] [runtime-status] [13178] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.8.0","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.8.0\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2024-03-26T05:55:46.464Z] [runtime-status] [13178] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"/home/bacancy/Documents/woundProject/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2024-03-26T05:55:46.562Z] [runtime-status] [13178] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"wound-firebase","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+3vYM9i3iDTLo\nFyig9RIwevbpi0Ce4uTXCReJRoKpBrBoi1bINpmFlI4U4RhkTW23TTGkpWB6TCWj\n/73wYxiIHB82ECr4Jt0aWIIRg0VVMfEXUJ8ELSnvektvEvShOewreF0SquumAIW0\nLHJa10UcKJaLGscTYZ9HinV7+HEOVpfdJVtYFOlGW+NutjCgBgYlxAAVPInM3Rme\noQwDpIIlzbr7MuTMgMAITD3fjNTVOnFpowYURNJJrFDix5gM2JhfyFZZeSe+DQVz\nyPoz65afkXCYRZ6UpJIovKk0TNihGoIURCjbxIpmTvwjH/sghmsR6knr8QVF+19y\ncTVVArZFAgMBAAECggEAGjM4yyavvavaJQmoxg9d49G9OummgSjcCLhyxqErJlCI\nvpEB5JG6GR//MNaFJp+KQ/MQsW0SBTeWoyBjzi+MGoLhteYaP93107v6frTqO3uT\ngIPMkCIy83ByElkjw03UIVNwUzOrDSpdMBI50EZkci0QHSAb24k29/cFkXLU8gar\nz1Ko82T48W18gjUNU2XKBneGVD3mELO2UbYJK9D7P0W7S7qMFRnXiQ3ISOXvm9mI\nl2Jsm3gHImzU2dIaS9uP4MffN+Hw9xirhF2V614JMNcdRZocTgtaSD5ZXXFs/ejB\noaHMz95SMxSPnLBfn/F0B6AFv/OORtPIXckv8R7EsQKBgQD4jbKxWeQzvr6vsFBe\nDyWiYSFFlzy/auApbmfwjMS7PCZFfzzoP5u/ez6vAn2tdQ1wwgPGNOPwTxFpYBtF\nLsa9g8brfm4KdDN9XoxVyHngxbewPQlllInnKkeg/r1eEiS2dAsQsDW4JGrhG9i1\n976ydF7rGTvlfJyJDlX04yujawKBgQDEltyhZbgnvsBvDpoyZYh5Rj33vQ25zbug\n7F8LP34Ga/WzIzxzn/aDfCs6qwZ9CaI7tKBjVUlcKSlwJJEdij07JgBHdkW2PojA\nvXGfCutDXyKKm+hG4hAvurYYmz5dGIdlHMR28RMlFaWmqQdnTH3Y6XdpS8ijpVeT\nTS7H8tgpDwKBgA2UyIfSTprZOFgnPSz2jOrjfcrsqaAX+empo7pMJs/ISJsRicVy\n/FKpLFKpwy5AMBzSLRyedToDSANHAhZ0qN1gHvVtMhwWH14hVW+2hZpXk2Lo4uOP\nCz37XHCamsRSH3lsu9IMntLSApkMSXof8GaV3z3fYht3BKKkiuPXqeHDAoGAffus\nMqZsSNQ+oC08dhWJSybPqYb3V95XYr53/k5XJihjkcSABh06LnMRhQx7IQBefmK3\n8lCCrdQXIS3d7Y9cxB4LScCq1irnGpWNTf4CXO+HxEo7pclT1DKUZdp/Mcv5YLv5\nz7uYqEhiGxbxjqp/b9XWV51gXDcmk1iAJVUkX9MCgYEA5UhzVd1FhbK5vfhP5mtj\n3GBoEejBtRjaLYCGqcZQcKjCUv4EDdzX7LPEODe0FX8BPIYp0eiAT1oWfenNJMTI\nc5PR4e/h4B0v6Ya/I/IbD2BYxaru5olc5i1Tfzarp1mp3lUKfFqunpN3V3AINUY/\nLpMGmti9PN1qBm4wIQUwYjk=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-dgmii@wound-firebase.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}},"databaseURL":"https://wound-firebase.firebaseio.com"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"wound-firebase\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+3vYM9i3iDTLo\\nFyig9RIwevbpi0Ce4uTXCReJRoKpBrBoi1bINpmFlI4U4RhkTW23TTGkpWB6TCWj\\n/73wYxiIHB82ECr4Jt0aWIIRg0VVMfEXUJ8ELSnvektvEvShOewreF0SquumAIW0\\nLHJa10UcKJaLGscTYZ9HinV7+HEOVpfdJVtYFOlGW+NutjCgBgYlxAAVPInM3Rme\\noQwDpIIlzbr7MuTMgMAITD3fjNTVOnFpowYURNJJrFDix5gM2JhfyFZZeSe+DQVz\\nyPoz65afkXCYRZ6UpJIovKk0TNihGoIURCjbxIpmTvwjH/sghmsR6knr8QVF+19y\\ncTVVArZFAgMBAAECggEAGjM4yyavvavaJQmoxg9d49G9OummgSjcCLhyxqErJlCI\\nvpEB5JG6GR//MNaFJp+KQ/MQsW0SBTeWoyBjzi+MGoLhteYaP93107v6frTqO3uT\\ngIPMkCIy83ByElkjw03UIVNwUzOrDSpdMBI50EZkci0QHSAb24k29/cFkXLU8gar\\nz1Ko82T48W18gjUNU2XKBneGVD3mELO2UbYJK9D7P0W7S7qMFRnXiQ3ISOXvm9mI\\nl2Jsm3gHImzU2dIaS9uP4MffN+Hw9xirhF2V614JMNcdRZocTgtaSD5ZXXFs/ejB\\noaHMz95SMxSPnLBfn/F0B6AFv/OORtPIXckv8R7EsQKBgQD4jbKxWeQzvr6vsFBe\\nDyWiYSFFlzy/auApbmfwjMS7PCZFfzzoP5u/ez6vAn2tdQ1wwgPGNOPwTxFpYBtF\\nLsa9g8brfm4KdDN9XoxVyHngxbewPQlllInnKkeg/r1eEiS2dAsQsDW4JGrhG9i1\\n976ydF7rGTvlfJyJDlX04yujawKBgQDEltyhZbgnvsBvDpoyZYh5Rj33vQ25zbug\\n7F8LP34Ga/WzIzxzn/aDfCs6qwZ9CaI7tKBjVUlcKSlwJJEdij07JgBHdkW2PojA\\nvXGfCutDXyKKm+hG4hAvurYYmz5dGIdlHMR28RMlFaWmqQdnTH3Y6XdpS8ijpVeT\\nTS7H8tgpDwKBgA2UyIfSTprZOFgnPSz2jOrjfcrsqaAX+empo7pMJs/ISJsRicVy\\n/FKpLFKpwy5AMBzSLRyedToDSANHAhZ0qN1gHvVtMhwWH14hVW+2hZpXk2Lo4uOP\\nCz37XHCamsRSH3lsu9IMntLSApkMSXof8GaV3z3fYht3BKKkiuPXqeHDAoGAffus\\nMqZsSNQ+oC08dhWJSybPqYb3V95XYr53/k5XJihjkcSABh06LnMRhQx7IQBefmK3\\n8lCCrdQXIS3d7Y9cxB4LScCq1irnGpWNTf4CXO+HxEo7pclT1DKUZdp/Mcv5YLv5\\nz7uYqEhiGxbxjqp/b9XWV51gXDcmk1iAJVUkX9MCgYEA5UhzVd1FhbK5vfhP5mtj\\n3GBoEejBtRjaLYCGqcZQcKjCUv4EDdzX7LPEODe0FX8BPIYp0eiAT1oWfenNJMTI\\nc5PR4e/h4B0v6Ya/I/IbD2BYxaru5olc5i1Tfzarp1mp3lUKfFqunpN3V3AINUY/\\nLpMGmti9PN1qBm4wIQUwYjk=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-dgmii@wound-firebase.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}},\"databaseURL\":\"https://wound-firebase.firebaseio.com\"}"}}
+[debug] [2024-03-26T05:55:46.567Z] [runtime-status] [13178] Functions runtime initialized. {"cwd":"/home/bacancy/Documents/woundProject/functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] Functions runtime initialized. {\"cwd\":\"/home/bacancy/Documents/woundProject/functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2024-03-26T05:55:46.568Z] [runtime-status] [13178] Listening to port: /tmp/fire_emu_286a37dae790332c.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[runtime-status] [13178] Listening to port: /tmp/fire_emu_286a37dae790332c.sock"}}
+[debug] [2024-03-26T05:55:46.605Z] [worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: IDLE"}}
+[debug] [2024-03-26T05:55:46.605Z] [worker-pool] submitRequest(triggerId=us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-wound)"}}
+[info] i  functions: Beginning execution of "us-central1-wound" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Beginning execution of \"us-central1-wound\""}}
+[debug] [2024-03-26T05:55:46.605Z] [worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: BUSY"}}
+[info] >  priyaintwala5@gmail.com {"user":"priyaintwala5@gmail.com","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m priyaintwala5@gmail.com"}}
+[info] >  all statuses {"user":"all statuses","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"\u001b[90m> \u001b[39m all statuses"}}
+[debug] [2024-03-26T05:55:46.774Z] Mar 26, 2024 11:25:46 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 26, 2024 11:25:46 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2024-03-26T05:55:46.817Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-wound" in 212.376717ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finished \"us-central1-wound\" in 212.376717ms"}}
+[debug] [2024-03-26T05:55:46.818Z] [worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: IDLE"}}
+[debug] [2024-03-26T05:55:46.818Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-03-26T05:55:46.818Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-03-26T05:55:46.818Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-03-26T05:56:25.755Z] File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/service/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T05:56:26.756Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T05:56:27.247Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T05:56:27.247Z] Building nodejs source
+[debug] [2024-03-26T05:56:27.247Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:56:27.248Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T05:56:27.249Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8118
+
+[debug] [2024-03-26T05:56:27.509Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T05:56:32.517Z] [worker-pool] Shutting down IDLE worker (us-central1-wound) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-wound)"}}
+[debug] [2024-03-26T05:56:32.517Z] [worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: FINISHING"}}
+[debug] [2024-03-26T05:56:32.523Z] [worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: exited"}}
+[debug] [2024-03-26T05:56:32.523Z] [worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-wound"},"extension":{},"message":"[worker-us-central1-wound-ea1363b1-2677-4537-82e2-538abdb9517e]: FINISHED"}}
+[debug] [2024-03-26T05:56:36.824Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T05:56:37.825Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T05:56:38.211Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T05:56:38.211Z] Building nodejs source
+[debug] [2024-03-26T05:56:38.211Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:56:38.213Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T05:56:38.213Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8168
+
+[debug] [2024-03-26T05:56:38.549Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-26T05:56:40.454Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T05:56:41.456Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T05:56:41.828Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T05:56:41.828Z] Building nodejs source
+[debug] [2024-03-26T05:56:41.828Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:56:41.829Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T05:56:41.829Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8432
+
+[debug] [2024-03-26T05:56:42.072Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[debug] [2024-03-26T05:56:44.327Z] File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/bacancy/Documents/woundProject/functions/controller/order.js changed, reloading triggers"}}
+[debug] [2024-03-26T05:56:45.328Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2024-03-26T05:56:45.709Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^11.11.1",
+    "firebase-auto-ids": "^1.1.0",
+    "firebase-functions": "^4.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.12"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-26T05:56:45.709Z] Building nodejs source
+[debug] [2024-03-26T05:56:45.709Z] Failed to find version of module node: reached end of search path /home/bacancy/Documents/woundProject/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-03-26T05:56:45.710Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-26T05:56:45.710Z] Found firebase-functions binary at '/home/bacancy/Documents/woundProject/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8154
+
+[debug] [2024-03-26T05:56:45.974Z] Got response from /__/functions.yaml {"endpoints":{"wound":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"wound"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}
+[info] ✔  functions: Loaded functions definitions from source: wound. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: wound."}}

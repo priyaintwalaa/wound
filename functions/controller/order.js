@@ -29,8 +29,7 @@ exports.getOrderByDays = async (req, res) => {
     customStartDate,
     customEndDate,
     days,
-    activeStatus,
-    completedStatus,
+    status
   } = req.query;
 
   if (days) {
@@ -42,8 +41,7 @@ exports.getOrderByDays = async (req, res) => {
       email,
       startDate,
       endDate,
-      activeStatus,
-      completedStatus,
+      status,
       res
     );
   } else {
@@ -53,8 +51,7 @@ exports.getOrderByDays = async (req, res) => {
       email,
       startDate,
       endDate,
-      activeStatus,
-      completedStatus,
+      status,
       res
     );
   }
