@@ -101,3 +101,14 @@ exports.createOrder = async (email, data) => {
     })
     res.status(200).json(orders);
   };
+
+
+exports.createTTF = async (orderId) =>{
+  const firestore = admin.firestore();
+  const ttfId = orderId + "-TTF"
+  console.log(ttfId,"ttfOId")
+  //also we can add the object with form details in it
+   const addId = await firestore.collection(orderCollection).doc(orderId).update({
+    ttfId
+   })
+}

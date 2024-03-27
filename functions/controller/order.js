@@ -1,4 +1,4 @@
-const { createOrder, getOrders } = require("../service/order");
+const { createOrder, getOrders, getOrdersByEmail, createTTF } = require("../service/order");
 const { DateTime } = require('luxon');
 
 exports.createOrderController = async (req, res) => {
@@ -24,7 +24,7 @@ exports.createOrderController = async (req, res) => {
 exports.getOrderByDays = async (req, res) => {
   const user = req.user;
   const email = user.email;
-  console.log(email);
+
   const {
     customStartDate,
     customEndDate,
@@ -57,3 +57,21 @@ exports.getOrderByDays = async (req, res) => {
     );
   }
 };
+
+exports.ttfSubmission = async (req,res) =>{
+  console.log(req.params)
+  const orderId = req.params.id
+  // const user = req.user;
+  // const email = user.email
+
+  // const getOrders = await getOrdersByEmail(email)
+
+  // const data = getOrders.data()
+  // const orderId = data.id
+
+  const addTTF = await createTTF(orderId)
+
+  res.status(200).json({
+    message:"ttf created"
+  })
+}
