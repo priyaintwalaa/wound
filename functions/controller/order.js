@@ -59,16 +59,7 @@ exports.getOrderByDays = async (req, res) => {
 };
 
 exports.ttfSubmission = async (req,res) =>{
-  console.log(req.params)
   const orderId = req.params.id
-  // const user = req.user;
-  // const email = user.email
-
-  // const getOrders = await getOrdersByEmail(email)
-
-  // const data = getOrders.data()
-  // const orderId = data.id
-
   const addTTF = await createTTF(orderId)
 
   res.status(200).json({
