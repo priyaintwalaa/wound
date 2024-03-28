@@ -3,6 +3,7 @@ const { Timestamp,FieldValue } = require("firebase-admin/firestore");
 const orderCollection = "orders";
 const countCollection = "count"
 const patientCollection = 'patients'
+const { STATUS, SUFFIX } = require('../helper/constant');
 
 function generateOrderId(ivrId,orderCount) {
   return `${ivrId}-${orderCount}`
@@ -30,9 +31,7 @@ exports.createOrder = async (email, data,patientId) => {
   const orderCountUpdate = await firestore.collection(patientCollection).doc(patientId).update({
     orderCount:FieldValue.increment(1)
   })
-
 };
-
 
   exports.getOrders = async (
     userId,
@@ -53,15 +52,14 @@ exports.createOrder = async (email, data,patientId) => {
       .where("date", "<=", endTimestamp)
 
     const statusPairs = status.split(',');
-    console.log(statusPairs,"stattusssss")
 
     const orders = {
       active: [],
       completed: []
     };
   
-    if (statusPairs.includes("shipped") || statusPairs.includes("paid")) {
-      const activeStatuses = statusPairs.filter(status => status === "shipped" || status === "paid");
+    if (statusPairs.includes(STATUS.SHIPPED) || statusPairs.includes(STATUS.PAID)) {
+      const activeStatuses = statusPairs.filter(status => status === STATUS.SHIPPED || status === STATUS.PAID);
       const activeOrdersQuery = ordersQuery.where("status", "in", activeStatuses);
       const activeOrdersSnapshot = await activeOrdersQuery.get();
       activeOrdersSnapshot.forEach(doc => {
@@ -69,8 +67,8 @@ exports.createOrder = async (email, data,patientId) => {
       });
     }
   
-    if (statusPairs.includes("pending") || statusPairs.includes("awaiting")) {
-      const completedStatuses = statusPairs.filter(status => status === "pending" || status === "awaiting");
+    if (statusPairs.includes(STATUS.PENDING) || statusPairs.includes(STATUS.AWAITING)) {
+      const completedStatuses = statusPairs.filter(status => status === STATUS.PENDING || status === STATUS.AWAITING);
       const completedOrdersQuery = ordersQuery.where("status", "in", completedStatuses);
       const completedOrdersSnapshot = await completedOrdersQuery.get();
       completedOrdersSnapshot.forEach(doc => {
@@ -84,7 +82,7 @@ exports.createOrder = async (email, data,patientId) => {
 
 exports.createTTF = async (orderId) =>{
   const firestore = admin.firestore();
-  const ttfId = orderId + "-TTF"
+  const ttfId = orderId + SUFFIX
   //also we can add the object with form details in it
    const addId = await firestore.collection(orderCollection).doc(orderId).update({
     ttfId
