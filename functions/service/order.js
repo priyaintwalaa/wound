@@ -63,42 +63,42 @@ exports.createOrder = async (email, data) => {
       .where("date", "<=", endTimestamp)
 
     const statusPairs = status.split(',');
-    const statuses = {};
-    statusPairs.forEach(pair => {
-      const [key, value] = pair.split('-');
-      if (key && value) {
-        statuses[key] = value;
-      }
-    });
+    console.log(statusPairs,"stattusssss")
 
-    let SecOrderQuery = ordersQuery
+    // const orders = []
+
+    // if(statusPairs){
+    //   ordersQuery = await ordersQuery.where("status","in",statusPairs).get()
+    // }
+
+    // ordersQuery.forEach((doc)=>{
+    //   const data = doc.data()
+    //   orders.push(data)
+    // })
 
     const orders = {
-      activeOrders: [],
-      completedOrders: [],
+      active: [],
+      completed: []
     };
-
-    if(statuses['active'] === "all"){
-      ordersQuery = await ordersQuery.where("status","in",["pending","shipped"]).get()
-    }else{
-      ordersQuery = await ordersQuery.where("status","==",statuses['active']).get()
+  
+    if (statusPairs.includes("shipped") || statusPairs.includes("paid")) {
+      const activeStatuses = statusPairs.filter(status => status === "shipped" || status === "paid");
+      const activeOrdersQuery = ordersQuery.where("status", "in", activeStatuses);
+      const activeOrdersSnapshot = await activeOrdersQuery.get();
+      activeOrdersSnapshot.forEach(doc => {
+        orders.active.push(doc.data());
+      });
     }
-    
-    if(statuses['completed'] === "all"){
-      SecOrderQuery =await SecOrderQuery.where("status","in",["paid","awaiting"]).get()
-    }else{
-      SecOrderQuery =await SecOrderQuery.where("status","==",statuses['completed']).get()
+  
+    if (statusPairs.includes("pending") || statusPairs.includes("awaiting")) {
+      const completedStatuses = statusPairs.filter(status => status === "pending" || status === "awaiting");
+      const completedOrdersQuery = ordersQuery.where("status", "in", completedStatuses);
+      const completedOrdersSnapshot = await completedOrdersQuery.get();
+      completedOrdersSnapshot.forEach(doc => {
+        orders.completed.push(doc.data());
+      });
     }
 
-    ordersQuery.forEach((doc)=>{
-      const order = doc.data()
-      orders.activeOrders.push(order)
-    })
-
-    SecOrderQuery.forEach((doc)=>{
-      const order = doc.data()
-      orders.completedOrders.push(order)
-    })
     res.status(200).json(orders);
   };
 
@@ -111,3 +111,39 @@ exports.createTTF = async (orderId) =>{
     ttfId
    })
 }
+
+    // const statuses = {};
+    // statusPairs.forEach(pair => {
+    //   const [key, value] = pair.split('-');
+    //   if (key && value) {
+    //     statuses[key] = value;
+    //   }
+    // });
+
+    // let SecOrderQuery = ordersQuery
+
+      // activeOrders: [],
+      // completedOrders: [],
+    
+
+    // if(statuses['active'] === "all"){
+    //   ordersQuery = await ordersQuery.where("status","in",["pending","shipped"]).get()
+    // }else{
+    //   ordersQuery = await ordersQuery.where("status","==",statuses['active']).get()
+    // }
+    
+    // if(statuses['completed'] === "all"){
+    //   SecOrderQuery =await SecOrderQuery.where("status","in",["paid","awaiting"]).get()
+    // }else{
+    //   SecOrderQuery =await SecOrderQuery.where("status","==",statuses['completed']).get()
+    // }
+
+    // ordersQuery.forEach((doc)=>{
+    //   const order = doc.data()
+    //   orders.activeOrders.push(order)
+    // })
+
+    // SecOrderQuery.forEach((doc)=>{
+    //   const order = doc.data()
+    //   orders.completedOrders.push(order)
+    // })
