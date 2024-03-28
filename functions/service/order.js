@@ -65,17 +65,6 @@ exports.createOrder = async (email, data) => {
     const statusPairs = status.split(',');
     console.log(statusPairs,"stattusssss")
 
-    // const orders = []
-
-    // if(statusPairs){
-    //   ordersQuery = await ordersQuery.where("status","in",statusPairs).get()
-    // }
-
-    // ordersQuery.forEach((doc)=>{
-    //   const data = doc.data()
-    //   orders.push(data)
-    // })
-
     const orders = {
       active: [],
       completed: []
@@ -111,39 +100,3 @@ exports.createTTF = async (orderId) =>{
     ttfId
    })
 }
-
-    // const statuses = {};
-    // statusPairs.forEach(pair => {
-    //   const [key, value] = pair.split('-');
-    //   if (key && value) {
-    //     statuses[key] = value;
-    //   }
-    // });
-
-    // let SecOrderQuery = ordersQuery
-
-      // activeOrders: [],
-      // completedOrders: [],
-    
-
-    // if(statuses['active'] === "all"){
-    //   ordersQuery = await ordersQuery.where("status","in",["pending","shipped"]).get()
-    // }else{
-    //   ordersQuery = await ordersQuery.where("status","==",statuses['active']).get()
-    // }
-    
-    // if(statuses['completed'] === "all"){
-    //   SecOrderQuery =await SecOrderQuery.where("status","in",["paid","awaiting"]).get()
-    // }else{
-    //   SecOrderQuery =await SecOrderQuery.where("status","==",statuses['completed']).get()
-    // }
-
-    // ordersQuery.forEach((doc)=>{
-    //   const order = doc.data()
-    //   orders.activeOrders.push(order)
-    // })
-
-    // SecOrderQuery.forEach((doc)=>{
-    //   const order = doc.data()
-    //   orders.completedOrders.push(order)
-    // })
