@@ -7,29 +7,21 @@ function generateOrderId(ivrId,orderCount) {
   return `${ivrId}-${orderCount}`
 }
 
-exports.createOrder = async (email, data) => {
+exports.createOrder = async (email, data,patientId) => {
   const firestore = admin.firestore();
   const { name, date, status, amount } = data;
   const formatedDate = new Date(date);
   const collectionRef = firestore.collection(orderCollection);
 
-  // const lastOrderRef = await collectionRef.orderBy("id", "desc").limit(1).get();
-  // let newId = 1001; // Start with the default first ID
-  // if (!lastOrderRef.empty) {
-  //   const lastId = lastOrderRef.docs[0].data().id;
-  //   newId = lastId + 1;
-  // }
-
   const countRef = firestore.collection(countCollection).doc('counters')
   const dataCount = await countRef.get()
-  const countData = await countRef.set({
+  const countData = await countRef.update({
     orderCount: dataCount.data()?.orderCount || 1
   })
   console.log(dataCount.data(),"countDta")
   const orderCount = await dataCount.data()?.orderCount
 
-  const ivrId = 12345
-  const orderId = generateOrderId(ivrId, orderCount);
+  const orderId = generateOrderId(patientId, orderCount);
 
   const countUpdate = await countRef.update({orderCount:FieldValue.increment(1)})
 

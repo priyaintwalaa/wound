@@ -4,6 +4,7 @@ const { DateTime } = require('luxon');
 exports.createOrderController = async (req, res) => {
   const user = req.user;
   const email = user.email;
+  const patientId = req.params.patientId
 
   const { name, date, status, amount } = req.body;
 
@@ -15,7 +16,7 @@ exports.createOrderController = async (req, res) => {
       );
   }
 
-  const data = await createOrder(email, req.body);
+  const data = await createOrder(email, req.body,patientId);
   console.log(data)
 
   res.status(200).json({ message: "Order Created"});

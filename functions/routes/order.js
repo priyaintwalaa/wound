@@ -5,7 +5,7 @@ const { createOrderController, getOrderByDays, ttfSubmission } = require('../con
 const router = express.Router()
 
 router.get('/',requireSignIn,getOrderByDays)
-router.post('/',requireSignIn,createOrderController)
+router.post('/:patientId',requireSignIn,createOrderController)
 router.get('/:id',requireSignIn,ttfSubmission)
 
 module.exports = router
