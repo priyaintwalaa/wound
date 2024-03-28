@@ -4,3 +4,5 @@ node_modules/
 /wound-firebase-firebase-adminsdk-dgmii-9478856c69.json
 /firebase-debug.log
 /firestore-debug.log
+/pubsub-debug.log
+/ui-debug.log
