@@ -21,7 +21,8 @@ exports.addPatient = async (data)=>{
    const IVR =  dataCount.data().IVRCount.toString()
 
    const addDetails = firestore.collection(patientCollection).doc(IVR).set({
-    name
+    name,
+    orderCount:1,
    })
 
    const countUpdate = await countRef.update({IVRCount:FieldValue.increment(1)})

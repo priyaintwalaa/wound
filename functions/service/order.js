@@ -2,6 +2,7 @@ const admin = require("firebase-admin");
 const { Timestamp,FieldValue } = require("firebase-admin/firestore");
 const orderCollection = "orders";
 const countCollection = "count"
+const patientCollection = 'patients'
 
 function generateOrderId(ivrId,orderCount) {
   return `${ivrId}-${orderCount}`
@@ -13,17 +14,10 @@ exports.createOrder = async (email, data,patientId) => {
   const formatedDate = new Date(date);
   const collectionRef = firestore.collection(orderCollection);
 
-  const countRef = firestore.collection(countCollection).doc('counters')
-  const dataCount = await countRef.get()
-  const countData = await countRef.update({
-    orderCount: dataCount.data()?.orderCount || 1
-  })
-  console.log(dataCount.data(),"countDta")
-  const orderCount = await dataCount.data()?.orderCount
+  const orderRef = await firestore.collection(patientCollection).doc(patientId).get()
+  const orderCount = orderRef.data().orderCount
 
   const orderId = generateOrderId(patientId, orderCount);
-
-  const countUpdate = await countRef.update({orderCount:FieldValue.increment(1)})
 
   const newOrder = await collectionRef.doc(orderId).set({
     id: orderId,
@@ -33,6 +27,10 @@ exports.createOrder = async (email, data,patientId) => {
     status,
     email,
   }); 
+  const orderCountUpdate = await firestore.collection(patientCollection).doc(patientId).update({
+    orderCount:FieldValue.increment(1)
+  })
+
 };
 
 
